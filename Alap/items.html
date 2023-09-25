@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weboldalam</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+
+    <header id="hideHeader">
+      <a class="WD-logo-a"><img class="WD-logo" src="logo/wd_logo.png" alt="WD_logo" /></a>
+
+      <ul class="navbar">
+        <li class="navbar-list-items"><a href="index.html">Home</a></li>
+        <li class="navbar-list-items"><a href="form.html">Form</a></li>
+        <li class="navbar-list-items">
+          <a href="items.html" class="active">Items</a>
+        </li>
+        <li class="navbar-list-items"><a href="lists.html">Lists</a></li>
+      </ul>
+    </header>
+  </head>
+
+  <body>
+    <div id="preloader" class="center">
+      <div class="ring"></div>
+      <span>töltés...</span>
+    </div>
+
+    <section class="container" align="center">
+      <h1 style="text-transform: uppercase; text-align: center">span, p, címsorok(h1,h2,h3), képek</h1>
+      <div class="text-content">
+        <h2>What is Lorem Ipsum?</h2>
+        <p>
+          <span>Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. <span>Lorem Ipsum</span> has been the industry's
+          standard dummy text ever <span>since the 1500s</span>.
+        </p>
+        <br />
+        <h2>Why do we use it?</h2>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+      </div>
+      <h2 id="images">Képek</h2>
+      <div class="picture-content">
+        <div class="picture-box">
+          <img src="img/bay.jpg" />
+          <h3>Sunset</h3>
+        </div>
+        <div class="picture-box">
+          <img src="img/landscape.jpg" />
+          <h3>Sunrise</h3>
+        </div>
+        <div class="picture-box">
+          <img src="img/leafes.jpg" />
+          <h3>Leafes</h3>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="script.js"></script>
+    <!--Legalulra kell tenni és akkor biztosan nem lesz bugos!-->
+  </body>
+</html>

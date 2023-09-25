@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weboldalam</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <header id="hideHeader">
+        <a class="WD-logo-a"><img class="WD-logo" src="logo/wd_logo.png" alt="WD_logo"></a>
+        
+        <ul class="navbar">
+            <li class="navbar-list-items"><a href="index.html" class="active">Home</a></li>
+            <li class="navbar-list-items"><a href="form.html">Form</a></li>
+            <li class="navbar-list-items"><a href="items.html">Items</a></li>
+            <li class="navbar-list-items"><a href="lists.html">Lists</a></li>
+        </ul>
+
+    </header>
+</head>
+
+<body>
+
+    <div id="preloader" class="center">
+        <div class="ring"></div>
+        <span>töltés...</span>
+    </div>
+
+    <br><br><br><br><br><br>
+    <div class="table-content" id="table" align="center">
+        <table>
+            <tr style="color:red;">
+                <th>Keresztnév</th>
+                <th>Lakhely</th>
+                <th>Nem</th>
+                <th>Kor</th>
+            </tr>
+            <tr>
+                <td>Milán</td>
+                <td rowspan="2">Budapest</td>
+                <td>Férfi</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Barbi</td>
+                <td>Nő</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>Karcsi</td>
+                <td>Miskolc</td>
+                <td>Férfi</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Ildikó</td>
+                <td>Encs</td>
+                <td>Nő</td>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td>Kincsem</td>
+                <td>Szikszó</td>
+                <td>Nő</td>
+                <td>20</td>
+            </tr>
+        </table>
+    </div>
+    <br><br><br><br>
+    <div class="link-content" id="links" align="center">
+        <h4>Linkek:</h4>
+        <a href="https://www.uni-miskolc.hu/" target="_blank" id="a_padding">Miskolci Egyetem</a>
+        <a href="https://www.youtube.com/" target="_blank" id="a_padding">YouTube</a>
+        <a href="https://www.facebook.com/" target="_blank" id="a_padding">Facebook</a>
+        <h4>Elem létrehozása, módosítása</h4>
+        <div id="newdiv"></div>
+        <button onclick="Modify()">Módosítás</button>
+    </div>
+</section>
+<script type="text/javascript" src="script.js"></script> <!--Legalulra kell tenni és akkor biztosan fog működni!-->
+
+</body>
+</html>

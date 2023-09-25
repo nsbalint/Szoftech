@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weboldalam</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+
+    <header id="hideHeader">
+      <a class="WD-logo-a"><img class="WD-logo" src="logo/wd_logo.png" alt="WD_logo" /></a>
+
+      <ul class="navbar">
+        <li class="navbar-list-items"><a href="index.html">Home</a></li>
+        <li class="navbar-list-items"><a href="form.html" class="active">Form</a></li>
+        <li class="navbar-list-items"><a href="items.html">Items</a></li>
+        <li class="navbar-list-items"><a href="lists.html">Lists</a></li>
+      </ul>
+    </header>
+  </head>
+
+  <body>
+    <div id="preloader" class="center">
+      <div class="ring"></div>
+      <span>töltés...</span>
+    </div>
+
+    <section class="container" align="center" style="padding-top: 8em">
+      <h1 style="text-align: center">Űrlap elemek</h1>
+      <div class="form-content">
+        <form class="form" id="registrationForm">
+          <h2>Regisztráció</h2>
+          <p>Teljes név</p>
+          <input type="text" class="name" />
+          <div class="error"></div>
+          <p>Leírás</p>
+          <textarea class="description"></textarea>
+          <div class="error"></div>
+          <p>Milyen idős?</p>
+          <div class="radio">
+            <input type="radio" class="radiobutton" name="ageGroup" value="18-24" />
+            <p>18-24</p>
+          </div>
+          <div class="radio">
+            <input type="radio" class="radiobutton" name="ageGroup" value="24-30" />
+            <p>25-30</p>
+          </div>
+          <div class="radio">
+            <input type="radio" class="radiobutton" name="ageGroup" value="30-" />
+            <p>30-</p>
+          </div>
+          <div class="error"></div>
+          <p>Válasszon egy színt</p>
+          <input type="color" class="color" />
+          <div class="error"></div>
+          <p>Születési dátum</p>
+          <input type="date" class="date" />
+          <div class="error"></div>
+          <div class="check">
+            <input type="checkbox" class="checkbox" id="acceptTerms" name="acceptTerms" value="true" />
+            <label for="acceptTerms">Elfogadom a feltételeket</label>
+          </div>
+          <div class="error"></div>
+          <button type="submit">Regisztráció</button>
+        </form>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="script.js"></script>
+    <!--Legalulra kell tenni és akkor biztosan nem lesz bugos!-->
+
+    <script>
+      const form = document.getElementById("registrationForm");
+      const name = document.querySelector(".name");
+      const description = document.querySelector(".description");
+      const radioButtons = document.getElementsByName("ageGroup");
+      const color = document.querySelector(".color");
+      const date = document.querySelector(".date");
+      const checkbox = document.querySelector(".checkbox");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        validateInputs();
+      });
+
+      const setError = (element, message) => {
+        const errorDisplay = element.nextElementSibling;
+        errorDisplay.innerText = message;
+        errorDisplay.style.color = "red";
+      };
+
+      const setSuccess = (element, message) => {
+        const errorDisplay = element.nextElementSibling;
+        if (element.tagName === "INPUT" && element.type === "radio") {
+          errorDisplay.innerText = message;
+          document.querySelector(".radioerror").innerText = "";
+        } else if (element.tagName === "INPUT" && element.type === "checkbox") {
+          errorDisplay.innerText = message;
+          errorDisplay.style.color = "black";
+        } else {
+          errorDisplay.innerText = "";
+        }
+      };
+
+      const validateInputs = () => {
+        const nameValue = name.value.trim();
+        const descriptionValue = description.value.trim();
+        const colorValue = color.value.trim();
+        const dateValue = date.value.trim();
+        const checkboxValue = checkbox.checked;
+        const radioChecked = Array.from(radioButtons).some((rb) => rb.checked);
+
+        if (nameValue === "") {
+          setError(name, "Nincs megadva név");
+        } else {
+          setSuccess(name);
+        }
+
+        if (descriptionValue === "") {
+          setError(description, "Nincs megadva leírás");
+        } else {
+          setSuccess(description);
+        }
+
+        if (!radioChecked) {
+          document.querySelector(".radioerror").innerText = "Nincs kiválasztva életkor";
+        } else {
+          for (let i = 0; i < radioButtons.length; i++) {
+            if (radioButtons[i].checked) {
+              if (i === 0) {
+                setSuccess(radioButtons[i], "18-24");
+              } else if (i === 1) {
+                setSuccess(radioButtons[i], "25-30");
+              } else if (i === 2) {
+                setSuccess(radioButtons[i], "30-");
+              }
+            }
+          }
+        }
+
+        if (colorValue === "") {
+          setError(color, "Nincs kiválasztva szín");
+        } else {
+          setSuccess(color);
+        }
+
+        if (dateValue === "") {
+          setError(date, "Nincs kiválasztva dátum.");
+        } else {
+          setSuccess(date);
+        }
+
+        if (!checkboxValue) {
+          setError(checkbox, "Nincs bepipálva az elfogadom a feltételeket mező.");
+        } else {
+          setSuccess(checkbox, "Elfogadom a feltételeket");
+        }
+        if (nameValue && descriptionValue && radioChecked && colorValue && dateValue && checkboxValue) {
+          alert("Sikeres regisztráció");
+        }
+      };
+    </script>
+  </body>
+</html>
