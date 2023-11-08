@@ -1,0 +1,673 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html style="direction: ltr;">
+<head>
+
+	
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+
+	
+	
+  <title>SRS</title>
+  <meta name="GENERATOR" content="OpenOffice.org 1.1.3  (Win32)">
+
+	
+  <meta name="AUTHOR" content="Lajos Ficsor">
+
+	
+  <meta name="CREATED" content="20050222;15124300">
+
+	
+  <meta name="CHANGEDBY" content="Lajos Ficsor">
+
+	
+  <meta name="CHANGED" content="20060309;12293594">
+
+	
+  <style>
+	<!--
+		@page { margin: 2cm }
+		P { margin-bottom: 0.21cm }
+		H1 { margin-bottom: 0.21cm }
+		H1.western { font-family: "Arial", sans-serif; font-size: 16pt }
+		H1.cjk { font-size: 16pt }
+		H1.ctl { font-size: 16pt }
+		H2 { margin-bottom: 0.21cm }
+		H2.western { font-family: "Arial", sans-serif; font-size: 14pt; font-style: italic }
+		H2.cjk { font-size: 14pt; font-style: italic }
+		H2.ctl { font-size: 14pt; font-style: italic }
+		TD P { margin-bottom: 0.21cm }
+		TH P { margin-bottom: 0.21cm; font-style: italic }
+	-->
+	</style>
+</head>
+
+<body>
+
+<p>		
+	<h1><br><center>SRS dokumentum </center>
+	<center>H3 feladat</center></h1>
+
+
+</p>
+
+<p style="margin-bottom: 0cm;"><br>
+
+</p>
+
+<p style="margin-bottom: 0cm; page-break-before: always;"><br>
+
+</p>
+
+<p style="margin-bottom: 0cm;" align="center"><b>T&ouml;rt&eacute;net</b></p>
+
+<p style="margin-bottom: 0cm;"><br>
+
+</p>
+
+<table border="1" bordercolor="#000000" cellpadding="4" cellspacing="0" width="643">
+
+	<col width="86">
+	<col width="57">
+	<col width="314">
+	<col width="152">
+	<thead>
+		<tr valign="top">
+
+			<th width="86">
+				
+    <p>D&aacute;tum</p>
+				
+			</th>
+
+			<th width="57">
+				
+    <p>Verzi&oacute;</p>
+
+			</th>
+
+			<th width="314">
+				
+    <p>Le&iacute;r&aacute;s</p>
+
+			</th>
+
+			<th width="152">
+				
+    <p>Szerző</p>
+
+			</th>
+
+		</tr>
+
+	</thead>
+	<tbody>
+
+		<tr valign="top">
+
+			<td sdnum="1038;0;@" width="86">
+				
+      <p align="left">
+		<center>2023.11.04</center>
+				</p>
+
+			</td>
+
+			<td sdnum="1038;0;@" width="57">
+				
+      <p>
+		<center>1.0</center>
+				</p>
+
+			</td>
+
+			<td sdnum="1038;0;@" width="314">
+				
+      <p>
+		Kezdeti verzió, H3 dokumentum elkészítése
+				</p>
+
+			</td>
+
+			<td sdnum="1038;0;@" width="152">
+				
+      <p>
+		Kelemen Beáta
+				</p>
+
+			</td>
+
+		</tr>
+
+		<tr valign="top">
+
+			<td sdnum="1038;0;@" width="86">
+				
+      <p>
+		<center>2023.11.05</center>
+				</p>
+
+			</td>
+
+			<td sdnum="1038;0;@" width="57">
+				
+      <p>
+		<center>2.0</center>
+				</p>
+
+			</td>
+
+			<td sdnum="1038;0;@" width="314">
+				
+      <p>
+		Másodlagos verzió, H3 dokumentum bővítése
+				</p>
+
+			</td>
+
+			<td sdnum="1038;0;@" width="152">
+				
+      <p>
+		Nádpataki-Sass Bálint
+				</p>
+
+			</td>
+
+		</tr>
+
+		<tr valign="top">
+
+			<td sdnum="1038;0;@" width="86">
+				
+      <p>
+		<center>2023.11.06</center>
+				</p>
+
+			</td>
+
+			<td sdnum="1038;0;@" width="57">
+				
+      <p>
+		<center>3.0</center>
+				</p>
+
+			</td>
+
+			<td sdnum="1038;0;@" width="314">
+				
+      <p>
+		Harmadlagos verzió, H3 dokumentum további bővítése, áttekintése
+				</p>
+
+			</td>
+
+			<td sdnum="1038;0;@" width="152">
+				
+      <p>
+		Buha Milán, Takács Ákos
+
+				</p>
+
+			</td>
+
+		</tr>
+
+	
+  </tbody>
+</table>
+
+<p><br>
+<br>
+
+</p>
+
+<p><br>
+<br>
+
+</p>
+
+<p><b>A lenti tartalomjegyz&eacute;k az aktu&aacute;lis tartalomnak megfelelően
+m&oacute;dos&iacute;tand&oacute;!</b></p>
+
+<p><b>Tartalomjegyz&eacute;k</b></p>
+
+<p style="margin-bottom: 0cm;"><a href="#1.+Bevezet%C3%A9s%7Coutline">1.
+Bevezet&eacute;s</a></p>
+
+<p style="margin-bottom: 0cm;"><a href="#2.+%C3%81ttekint%C3%A9s%7Coutline">2.
+&Aacute;ttekint&eacute;s</a></p>
+
+<p style="margin-bottom: 0cm;"><a href="#3.+A+rendszer+funkci%C3%B3i%7Coutline">3.
+A rendszer funkci&oacute;i</a></p>
+
+<p style="margin-left: 0.48cm; margin-bottom: 0cm;"><a href="#3.1.+Els%C5%91+k%C3%B6vetelm%C3%A9ny%7Coutline">3.1
+Első k&ouml;vetelm&eacute;ny</a></p>
+
+<p style="margin-bottom: 0cm;"><a href="#4.+Haszn%C3%A1lhat%C3%B3s%C3%A1g%7Coutline">4.
+Haszn&aacute;lhat&oacute;s&aacute;g</a></p>
+
+<p style="margin-bottom: 0cm;"><a href="#5.+Megb%C3%ADzhat%C3%B3s%C3%A1g%7Coutline">5.
+Megb&iacute;zhat&oacute;s&aacute;g</a></p>
+
+<p style="margin-bottom: 0cm;"><a href="#6.+Teljes%C3%ADtm%C3%A9ny%7Coutline">6.
+Teljes&iacute;tm&eacute;ny</a></p>
+
+<p style="margin-bottom: 0cm;"><a href="#7.+T%C3%A1mogatotts%C3%A1g%7Coutline">7.
+T&aacute;mogatotts&aacute;g</a></p>
+
+<p style="margin-bottom: 0cm;"><a href="#8.+Tervez%C3%A9si+korl%C3%A1toz%C3%A1sok%7Coutline">8.
+Tervez&eacute;si korl&aacute;toz&aacute;sok</a></p>
+
+<p style="margin-bottom: 0cm;"><a href="#9.+On-line+dokument%C3%A1ci%C3%B3+%C3%A9s+Help+rendszer%7Coutline">9.
+On-line dokument&aacute;ci&oacute; &eacute;s Help rendszer</a></p>
+
+<p style="margin-bottom: 0cm;"><a href="#10.+Felhaszn%C3%A1lt+k%C3%A9sz+komponensek%7Coutline">10.
+Felhaszn&aacute;lt k&eacute;sz komponensek</a></p>
+
+<p style="margin-bottom: 0cm;"><a href="#11.+Interf%C3%A9szek%7Coutline">11.
+Interf&eacute;szek</a></p>
+
+<p style="margin-left: 0.5cm; margin-bottom: 0cm;">11.1. Felhaszn&aacute;l&oacute;i
+interf&eacute;szek</p>
+
+<p style="margin-left: 0.5cm; margin-bottom: 0cm;">11.2. Hardware
+interf&eacute;szek</p>
+
+<p style="margin-left: 0.5cm; margin-bottom: 0cm;">11.3. Software
+interf&eacute;szek</p>
+
+<p style="margin-left: 0.5cm; margin-bottom: 0cm;">11.3. Kommunik&aacute;ci&oacute;s
+interf&eacute;szek</p>
+
+<p style="margin-bottom: 0cm;"><a href="#12.+Alkalmazott+szabv%C3%A1nyok%7Coutline">12.
+Alkalmazott szabv&aacute;nyok</a></p>
+
+<p style="margin-left: 0.5cm; margin-bottom: 0cm;">12.1. K&ouml;telezően
+alkalmazand&oacute; szabv&aacute;nyok</p>
+
+<p style="margin-left: 0.5cm; margin-bottom: 0cm;">12.2. V&aacute;laszt&aacute;s
+alapj&aacute;n alkalmazott szabv&aacute;nyok</p>
+
+<p style="margin-bottom: 0cm;"><a href="#13.+Mell%C3%A9kletek%7Coutline">13.
+Mell&eacute;kletek</a></p>
+
+<p><br>
+<br>
+
+</p>
+
+<h1 class="western"><a name="1. Bevezet&eacute;s|outline"></a>1. Bevezet&eacute;s</h1>
+
+<p><font face="Arial, sans-serif">A megálmodott játékunk neve: The UNI Saga, ami egy MMORPG, és kalandjáték ötvözete. A játék egy kitalált univerzumban, egy kitalált országban játszódik, Triviálisztánban, 
+	mely egy egyetemi környezetben helyezi el a játékosokat, és ahol a tudás és a bátorság a kulcs a sikerhez. 
+	Játék célja a felfedezés, fejlődés és szociális interakciók más játékosokkal.</font></p>
+
+
+<p style="margin-bottom: 0cm;"><br>
+
+</p>
+
+<h1 class="western"><a name="2. &Aacute;ttekint&eacute;s|outline"></a>2. &Aacute;ttekint&eacute;s</h1>
+
+
+
+<p>	<li>A termék környezete: A játékunk Steamen és később Epic Games-re fog megjelenni a PC-re. Más eszközre nem készülünk megjelentetni. A játék egy többszemélyes, és egyszerre több szervert fogunk futtatni, különböző régiókban, legyen az Európa, Ázsia, Észak-Amerika stb. 
+	Egy szerver 1000 embert képes befogadni, és egy játékos egyszerre egy karakterrel tud játszani. A játék elindulásakor várunk a legnagyobb játékosszámra. Ezen felül megpróbáljuk a a játékosszámunkat fenttartani, és eventeket, kiegészítőkkel próbáljuk "frissen" tartani a játékunkat. A szoftverünk végtelenségig játszható, mert különböző karakterek különböző játékstílust ígényelnek, és így akár többször is újrajátszható. 
+	Egy karakterrel való teljes végigjátszásnak 100 órát tippelünk.</li>
+	<li>Funkciók: A játék több mint 100 órányi tartalommal rendelkezik, de a karakterek fejlődése alapján a játékidő tetszőlegesen hosszabbítható. A játékosok szabadon mozoghatnak a világban, de közben küldetéseket is teljesíteniük kell az egyetemet körülvevő sötét erdő mélyebb részei feloldásához. A többjátékos mód lehetővé teszi a játékosok számára, hogy közösen vigyék végig a játékot és küzdjenek az ellenségek ellen.</li>
+	<li>A szoftver bármely korosztály számára ajánlott és elérhető.  Többnyire magánszemélyek körében lehet számítani az alkalmazás elterjedésére. Valószínűleg a legfőbb célközönség a fiatal felnőttek korosztálya, egyetemisták, azonban az is elképzelhető, hogy már végzett hallgatók, oktatók is fognak vele játszani. Bárki jól érezheti magát a játék közben, szolgálhat unalom elűzésre, kihívások iránti vágy csökkentésére, szórakozásra.</li>
+	<li>Korlátozások:</li>
+	<li>A játék időbeli korlátozásai: A játékban eltöltött idő nem korlátozott, így a játékosok bármennyi időt tölthetnek el benne anélkül, hogy bármilyen limitációval találkoznának.</li>
+	<li>Életkori korlátozások: A játék tartalma nem tartalmaz semmilyen olyan elemet, ami korhatár-besorolást igényelne, így minden korosztály számára hozzáférhető.</li>
+	<li>Grafikai beállítások: A játékosok képesek lesznek módosítani a grafikai beállításokat, hogy az alacsonyabb teljesítményű gépeken is élvezhető legyen a játék. Ezen felül a játékot úgy optimalizáltuk, hogy az 64-bitet támogató operációs rendszereken fusson a legoptimálisabban.</li>
+	<li>Jogi korlátozások: A játék használatához elengedhetetlen az Adatvédelmi és Általános Szerződési Feltételek(ÁSZF) és a végfelhasználói licencszerződés elfogadása.</li>
+	<li>Feltételezések: A felhasználó rendelkezik internetkapcsolattal az online funkciók működéséhez, tisztában van az operációs rendszere kezelésével. Egy időben csak egy felhasználó használja a terméket.</li>
+	<li>Függőségek: A felhasználó rendelkezik egy Directx 12-t és Vulkan-t támogató videokártyával. A VC Runtimes 2020 elérhető a szoftver megfelelő működéséhez. Amennyiben nincs elég hely a teljes adatbázis számára, lehetséges az osztott adatbázis alkalmazása.</li>
+	</p>
+
+
+<p><br>
+<br>
+
+</p>
+
+<h1 class="western"><a name="3. A rendszer funkci&oacute;i|outline"></a>3. A
+rendszer funkci&oacute;i</h1>
+
+
+<p>A The UNI Saga alkalmazás során a felhasználó által használt funkciók közé tartozik az új játék kezdése, 
+	illetve a már mentett játék elindítása, folytatása. 
+	A játékban nincs felső korlátja a szinteknek. 
+	Azonban ahogy fejlődünk, a következő szint eléréséhez egyre több tapasztalati pontot kell gyűjtenünk. 
+	A tapasztalati pontokat a fő- és mellékküldetések teljesítésével, valamint az ellenségek legyőzésével szerezhetjük meg. 
+	Fontos megjegyezni, hogy a szintünk alatti ellenfelek kevesebb tapasztalati pontot adnak, tehát a fejlődésért meg kell dolgozni! </p>
+
+<p><br>
+
+</p>
+<h4>A szoftver egységei:</h4>
+Menü: Egy egyszerű menü rendszert képzelünk el, ahol a játékos kiválaszthatja a karakterét, eszerint a kart, mellyel szeretne játszani. 
+Itt tudja elindítani az új vagy a meglévő, már mentett játékot is. 
+Beállításokat elérheti, ahol tudja szabályozni a hangerőt, felbontást, felhasználói adatokat, és sok mást.
+Nem utolsó sorban itt tudja megállítani, folytatni, kilépni a játékból.
+
+<p>Karakterek: Az egyetemi élet középpontjában a hallgatók állnak és a sötét mágia által torzított szörnyekkel, illetve gonosz törvényen kívüli mágusokkal mérkőznek meg. 
+	Minden oktató és tanár különféle kihívásokkal és feladatokkal várja a diákokat. Ezeket a karakter objektumokat nem a felhasználó kezeli. 
+	Az NPC-k viselkedését a játékos és az ő döntései, eredményei befolyásolják. 
+	Bizonyos NPC-kel lehet harcolni, szembe szállni.</p>
+<p><br>
+
+</p>
+
+<p><h4>Offline egyjátékos módok:</h4>
+	Use Case diagram: az alapvető felépítésről<br>
+</p>
+<p><center><img src="TUS.png" alt="Use Case Diagramm"></center></p>
+<p>Szereplők közül itt még csak a ’Játékos’ szerepel, és a rendszer válaszaihoz más emberi beavatkozás nem csatlakoztatható.
+	<li>Új játék kezdése: Ezt a funkciót alkalmazva a felhasználó saját mentési slot-ot kiválasztva, a szoftver kezdeti állapotából indulhat.</li>
+	<li>Játék betöltése: Akár új, akár elmentett állapotot betöltve elindul a szoftver főbb része, mely egy RPG esetén két nagyobb csoportú kezelőfelület adott kritériumoknak megfelelően váltogatja egymást.</li>
+	<li>Nyílt világi cselekvés: RPG játékok esetén itt a játékos szabad döntéseket hoz, és próbálja a szoftver által kiadott küldetéseket teljesíteni, annak érdekében, hogy elérje a történet végét. Azonban a szoftvernek nincs beleszólása a felhasználó választásain, így mindenki a saját döntése alapján növelheti a progressziót.</li>
+	<li>Küldetések teljesítése:</li>
+	<li>Előrehaladás nyomonkövetése:</li>
+	<li>NPC-k:</li>
+	<li>Játékos és NPC-k közötti viszony:</li>
+	<li>Nyílt-világ atmoszféra változása:</li>
+	<li>Történet befolyása:</li>
+	<li>Beállítások: Paraméterek testreszabhatósága, karakterek alakítása, felhasznói élmények  csoportosítása. Grafika, Audio, Irányítás.</li>
+	<li>Kilépés: A szoftver legális bezárását ez a funkció biztosítja.</li>
+	</p>
+
+<p><br>
+</p>
+
+<h4>Több játékos mód:</h4>
+<p>Use Case diagram: az alapvető felépítésről a többjátékos módhoz</p>
+<p><center><img src="TUS2.png" alt="Use Case Diagramm"></center></p>
+<p>Leírás: A ’Játékos’ szereplők mellett itt bekerülnek második szereplők is a ’Játékos’ néven, mely nagy vonalakban ugyanazokat a szerepeket tölti be, mint a ’Játékos’.</p>
+<br>
+<ul>
+	<li>Centrális adatbázis:</li>
+	<li>Játék elhagyás:</li>
+	<li>Kihívás kiválasztása:</li>
+	<li>Játék kezdete:</li>
+	<li>Pálya betöltése:</li>
+	<li>Tereptárgyak, checkpontok betöltése:</li>
+</ul><br>
+
+
+<h1 class="western"><a name="4. Haszn&aacute;lhat&oacute;s&aacute;g|outline"></a>4.
+Haszn&aacute;lhat&oacute;s&aacute;g</h1>
+
+<ul>
+<h3>Betanulási idő:</h3>
+A játék elsajátítása egyszerű, nem vesz igénybe sok időt. A fejlesztés során törekedtünk arra, hogy bármilyen felhasználó számára könnyen kezelhető legyen, annak is, aki még nem találkozott ilyen típusú játékkal. Bármilyen platformon, legyen az PC vagy konzolos. A játék kezdete előtt a felhasználó eldöntheti, hogy szeretné-e kipróbálni a tutorialt, ahol megismerheti a játékot és már tapasztalattal kezdi meg a játékot. A kezelőfelület is megkönnyíti a játékosok helyzetét, letisztult, egyszerű, jól érthető. Illetve további súgó funkció is van, amely magyarázatot ad az esetleges kérdésekre, az irányításról, billentyűzet funkciókról és egyéb játék elemekről. Tehát ez az egész betanulási folyamat körülbelül fél órát vesz igénybe.
+<h3>Időigény:</h3>
+Az elsajátítás időtartalma, nyilván függ a játékosok, felhasználók képességeitől, ismereteitől, az abba fektetett időtől, és a hajlandóságtól. Ahogy a betanulási időnél is említettük ettől függetlenül, a játék mielőbbi elsajátításához minden adott, kezdő- és gyakorló-, expert felhasználók is hamar el tudják sajátítani a tudást. A tanuló móddal, a súgó funkcióval. A teljes történet idő 100 óra azonban ezt a különböző karakterekkel, különböző játékstílusával megtudja növelni és végtelenségig tudja játszani. Pályánként, küldetésenként, szintenként adódik össze ez az időtartam. Egy pálya átlagosan 1 órát vesz igénybe, de itt is függ a felhasználó ismereteitől, ezt figyelembe változhat mindkét irányban ennek az ideje.
+<h3>Segítség a rendszertől:</h3>
+Elsősorban a platform specifikus tutorial, azaz tanuló mód jelenti, melyet az első találkozáskor megismerhet a felhasználó, itt az alapvető funkciókat, irányításokat ismerheti meg a felhasználó, azonban ezt csak minden játék elején tudja elindítani. Azonban a legnagyobb segítség a beépített súgó rendszer lesz, mivel ezt bármikor a későbbiek során előtudja hívni a játékos. Ha elakad a játék közben az adott pályához specifikus tippeket kaphat, de az irányítás gombjait és egyéb funkciókat is megtalál. 
+<h3>Egyéb lehetőségek a betanuláshoz:</h3>
+A szoftverről írt dokumentációk elérhetőek online, vagy a README dokumentumban a telepítés után, azonban ha fizikai formában szeretnénk hozzájutni, akkor papír alapon is hozzájuthatunk a legfontosabb dokumentumokhoz. A felhasználók ezeknek az ismeretében, minden segítséget megkapnak.
+<h3>Felhasználói felület:</h3>
+A játék készítésekor, fejlesztésekor törekedtünk arra, hogy minél egyszerűbb legyen a kezelése. A menü esetében nem alkalmaztunk félre érthető, bonyolult menüpontokat, túlzott díszítéseket. Olyan kezelőfelületre törekedtünk, amit már a felhasználók láthattak korábban, ismerhetnek más játékokból, nem utolsó sorban egyszerű és átlátható felületet szerettünk volna kialakítani számukra.
+<h3>Futtatás:</h3>
+Természetesen függ a rendszer erőforrásaitól, hogy a felhasználó milyen eszközzel rendelkezik, s annak milyenek a kapacitásai. A játékon belüli beállításoktól függ az általa igénybe vett erőforrások mérete is. Egyértelműen befolyásolhatja az egyidejűleg futó programokat, gyengébb rendszereken a játék. Erősebb gépeken, eszközökön nem akadályozza a játék, hogy mellette internetezzünk, vagy más programokat futtassunk a bezárása nélkül. Összességében a játék felhasználói élménye minden eszközön garantált, de figyelembe kell venni a fent írt erőforrások függvényét.  
+
+</ul>
+
+
+
+
+
+<p><br>
+<br>
+
+</p>
+
+<h1 class="western"><a name="5. Megb&iacute;zhat&oacute;s&aacute;g|outline"></a>5.
+Megb&iacute;zhat&oacute;s&aacute;g</h1>
+
+
+<ul>
+
+	<li>
+    <p>	A szoftver 99 %-ban(az esetlegesen felmerülő problémák miatt) rendelkezésre áll egyjátékos módban, többjátékos módban havi egy karbantartást tervezünk, melynek ideje körülbelül 5 órát vesz igénybe. Ez idő alatt a használhatóság korlátozott lehet.</p>
+
+	</li>
+  <li>
+    <p>MTBF: (Mean Time Between Failures): hibák között eltelt átlagos idő kb. 3000 óra</p>
+
+	</li>
+  <li>
+    <p>MTTR: (Man Time To Repair): egy hiba utáni javítás átlagos ideje 5 óra, függ a hiba mértékétől</p>
+
+	</li>
+  <li>
+    <p>A hibák kezelése: a súlyosság mértékétől függően kezelés vagy a program terminálása</p>
+<li><p>A hibák javítását továbbra is mi, a Let Us Cook! csapat végzi. </p></li>
+  </li>
+</ul>
+
+<p><br>
+<br>
+
+</p>
+
+<h1 class="western"><a name="6. Teljes&iacute;tm&eacute;ny|outline"></a>6.
+Teljes&iacute;tm&eacute;ny</h1>
+Az elvárt teljesítmény mutatók:
+<ul>
+
+<li>Válaszidők: Egyjátékos mód esetén.. </li>
+Online mód esetén Európán belül kb. 10 másodperc, 300 másodperc után, tehát 5 perc elteltével vagy a fölött a kapcsolat megszakad
+</ul>
+
+<li>Áteresztő képesség összesen 50.000 TPS</li>
+<ol>Users(Threads) esetén 10.000</ol>
+<ol>End to End Response Time: 2 másodperc</ol>
+<ol>Pacing: 0 másodperc</ol>
+<ol>Total Think Time: 0 másodperc</ol>
+<li>Kapacitás: a játék indulásánál, egyjátékos módban, az egyidejűleg kiszolgálandó felhasználók száma 10.000 </li>
+<li>Szerver:</li>
+<ol>CPU: AMD Ryzen7 7840HS </ol>
+<ol>RAM: 32GB</ol>
+<ol>Videókártya:NVIDIA GEForce RTX4060</ol>
+<ol>Tárhely: 1TB Samsung 980 Pro SSD</ol>
+<ol>OS: Windows</ol>
+<li>Erőforrás igények:</li>
+<ol>CPU: Intel Core I5, AMD Radeon RX</ol>
+<ol>RAM: 8GB</ol>
+<ol>Videókártya: Nvidia Geforce GTX, AMD Radeon RX</ol>
+<ol>Tárhely: 80 GB(SSD)</ol>
+</ul>
+
+
+<h1 class="western"><a name="7. T&aacute;mogatotts&aacute;g|outline"></a>7.
+T&aacute;mogatotts&aacute;g</h1>
+
+
+<ul>
+	<p><li>A játék fejlesztése során, a használandó kódolási szabványok figyelembe vételével igyekeztünk betartania C++ szabályainak betartására, a későbbiek miatt, hogy könnyebb és átláthatóbb legyen a játék bővítése vagy a hibák javítása esetén. Illetve, hogy minél látványosabb és fejlettebb grafikát kínáljunk.</li></p>
+	<p><li>Nem igényel karbantartást az egyjátékos üzemmód, a többjátékos módot pedig havonta szeretnénk karbantartani, szükség esetén nagyobb rendszerességgel fogjuk megtenni.</li></p>
+	<p><li>Az esetlegesen felmerülő hibákra, a játékosok , a játék hivatalos oldalán tudják felhívni a figyelmünket, illetve egy erre fenntartott email címen keresztül is tudják jelenti őket, amiket igyekszünk minél hamarabb orvosolni.</li></p>
+	<p><li>A játék az esetleges hibákról, az online bejelentkezett felhasználókról naplófájlokat készít, dokumentálja ezeket. Ezeket segédalkalmazásokkal kiértékeljük.</li></p>
+</ul>
+
+	
+
+
+
+<p><br>
+<br>
+
+</p>
+
+<h1 class="western"><a name="8. Tervez&eacute;si korl&aacute;toz&aacute;sok|outline"></a>8.
+Tervez&eacute;si korl&aacute;toz&aacute;sok</h1>
+
+
+<ul>
+
+	<li>C++ programozási nyelvben fogjuk fejleszteni, a látványos és fejlett grafika érdekében. Unreal Engine 5 motorját is használjuk, a fények és árnyékok realisztikus kezelésére, ami segít élethűvé tenni az épületeket és a tájakat.  Emellett MySQL-re lesz szükség az adatbázisrendszerekhez, melynél törekszünk mindig a legfrissebb, legbiztosabbnak talált verziót használni. Fontos számunkra, hogy minél több felhasználóhoz el tudjuk juttatni a szoftvert, emiatt platformfüggetlen legyen. Illetve az objektum orientált programozást szem előtt tartva a nyelv kiválasztásakor.</li>
+	<li>Fejlesztőeszköznek a Visual Studio Code-ot választottuk, ebben fog történni a fejlesztés.</li>
+	<li>Célunk, hogy minél alacsonyabb rendszerkövetelményt igényeljen a játék konzolon és PC-n is. Ezáltal tudjuk biztosítani, hogy minél több hardveren tudjon futni. Nem utolsó sorban így több felhasználót el tudunk érni, mert az is hozzá tud férni, aki kisebb teljesítményű géppel, eszközzel rendelkezik.</li>
+	<li>Milyen újra felhasználható elemek építhetők be az alkalmazásba (komponens- és/vagy osztálykönyvtárak, kész kódok stb.). </li>
+	<li>Milyen fejlesztési módszertant, hogyan kell használni.</li>
+	<li>A játék fejlesztési módszere a Scrum. A Scrum egy könnyen érthető és alkalmazható módszer, amely lehetővé teszi a folyamatos visszajelzést és a hatékony fejlesztést.
+		A Scrum projektet kis időablakokra osztja, amelyeket "sprinteknek" neveznek, általában 2-4 hét hosszúságúak. Minden sprint kezdetén a fejlesztőcsapat kiválasztja a sprint deliverables-t, amit a sprint végéig elkészítenek. A terméktulajdonos összeállítja a termék backlog-ot, amely tartalmazza a jövőbeni fejlesztésre tervezett funkciókat és javításokat. A backlog elemeket prioritással rendelkező listaként kezelik. Minden sprint kezdetén a fejlesztőcsapat kiválasztja a sprint backlog elemeket a termék backlog-ból, és meghatározza, hogy mely feladatokat hajtják végre a sprint során. A sprint végén tartott meeting, ahol a fejlesztőcsapat bemutatja a sprint deliverables-t a terméktulajdonosnak és más érdekelteknek. A visszajelzések és az elfogadás itt történik.</li>
+	
+</ul>
+
+<p><br>
+<br>
+
+</p>
+
+<h1 class="western"><a name="9. On-line dokument&aacute;ci&oacute; &eacute;s Help rendszer|outline"></a>
+9. On-line dokument&aacute;ci&oacute; &eacute;s Help rendszer</h1>
+
+<p>A játékról való információk a weboldalon található dokumentációkban lesz elérhető. 
+	Ezeket a játékon belül, a menü pontból is eltudjuk érni, mivel átirányít minket a játék weboldalára. 
+	A játék telepítése után a felhasználó számára elérhetővé válik a súgó, melyhez offline is hozzá tud férni a játékos. Itt továbbra is olvashat a kezdeti lépésekről, a játék menetéhez szükséges fontos információkról. Amennyiben fizikailag vásárolja meg a felhasználó, a csomagban található lesz a játék dokumentációja, illetve ez tartalmazni fog egy QR kódot is, illetve egy URL-t, melyeket beolvasva/beírva továbbítja a játékost a weboldalra, online fórumra, ahol megtalálja ezeket az információkat, dokumentumokat, kérdéseire a választ. 
+	Illetve itt tudják még megosztani egymással a tapasztalataikat, esetleges kérdéseiket megvitatni.   </p>
+
+
+<p><br>
+<br>
+
+</p>
+
+<h1 class="western"><a name="10. Felhaszn&aacute;lt k&eacute;sz komponensek|outline"></a>
+10. Felhaszn&aacute;lt k&eacute;sz komponensek</h1>
+
+
+
+<p>Steam API/SDK:
+
+	A játék kommunikációját segíti a Steam szervereivel, lekérdezheti a steam interface parancsait, adatokat küldhet a játékos által elért teljesítményekről, amelyeket a steam profilban átállíthat elért állapotúra.
+	<br><br>Unreal Engine: Az általunk használt grafikai motor, amit a játék fejlesztéséhez használunk. 654571Ft fő/év
+	
+	<br><br>Visual Studio 2022:Szintén a fejlesztéshez használt licence, scriptek írásához használjuk. $1000 / fő</p>
+
+	<br>Szerver gép bérlés: Ennek az összege változható lehet, a játékosszámot tekintve lehet 1500$/hónap.
+<p><br>
+<br>
+
+</p>
+
+<h1 class="western"><a name="11. Interf&eacute;szek|outline"></a>11.
+Interf&eacute;szek</h1>
+
+
+
+<h2 class="western">11.1. Felhaszn&aacute;l&oacute;i interf&eacute;szek</h2>
+
+
+<ul>
+
+	<li>használandó szabvány vagy kvázi-szabvány, stílus,</li>
+	<li>a különböző felhasználói csoportok (munkakör, gyakorlottság stb. szerint) elvárásai,</li>
+	<li>a leglényegesebb user interface elemek tervei.</li>
+</ul>
+A szoftver grafikus felülettel rendelkezik, amelyen keresztül a játékosok kommunikálnak a játékkal. A grafikus elemek segítségével könnyen navigálhatnak és folyamatosan tájékozódhatnak a játék világában. Az alábbiakban néhány példa található ezekre a grafikus elemekre:
+<ul>
+	<li>Üzenetablakok: Ezek az ablakok jelenhetnek meg, hogy tippeket adjanak a játékosoknak vagy tájékoztatást nyújtsanak a játékbeli eseményekről, például karakterek interakcióiról.</li>
+	<li>Szövegdobozok: Ezek a dobozok lehetővé teszik a játékosok számára a szöveg bevitele és megjelenítése, például chat ablakok vagy felhasználónevek beírásához.</li>
+	<li>Kiválasztó listák: Alkalmanként a játék lehetőséget kínál a játékosoknak arra, hogy válasszanak különböző lehetőségek közül, amelyek befolyásolhatják a játék folyamatát. Ezeket a választási lehetőségeket kiválasztó listák segítségével lehet kezelni.</li>
+</ul>
+Az ilyen grafikus elemek, például felugró üzenetek vagy szövegdobozok, segítik a játékmenetet és könnyen kezelhetővé teszik a játékot. A felhasználók könnyen értelmezhetik ezeket az elemeket, és segítik a játékosokat az információk megértésében és a játékbeli döntések meghozatalában.
+<p><br>
+<br>
+
+</p>
+
+<h2 class="western">11.2. Hardware interf&eacute;szek</h2>
+
+
+<p>A játékot hagyományosan számítógépen az egér és a billentyűzet segítségével irányítják, de lehetőség van kontrollerek használatára is. Konzolok esetében a konkrét konzolhoz tartozó kontrollerrel történik az irányítás. Célunk, hogy mindkét típusú hardverrel tökéletesen lehessen játszani.</p>
+
+<p><br>
+<br>
+
+</p>
+
+<h2 class="western">11.3. Software interf&eacute;szek</h2>
+
+
+
+<p>Ha a rendszernek más rendszerekkel az üzembe helyezés után, vagy belátható időn belül majd a kapcsolatot kell tartania más rendszerekkel, itt kell megadni a kapcsolat kiépítéséhez szükséges részletességű információkat.
+	Számítógépeken a program futásához egy 64 bites operációs rendszerre van szükség (Windows, Linux), illetve a legfrissebb .NET-et támogató runtime szoftverekre.
+</p>	
+
+<p><br>
+<br>
+
+</p>
+
+<h2 class="western">11.3. Kommunik&aacute;ci&oacute;s interf&eacute;szek</h2>
+
+
+
+<p>Ha a rendszernek valamilyen kommunikációs csatorna vagy csatornák segítségével kell kapcsolatot tartania a felhasználókkal vagy más rendszerekkel. (Például internetes, mobiltelefonos kliens stb.)<br><br>
+	A játék online tartalmakat is kínál, amelyekhez aktív kommunikációs csatornára van szükség a játékosok és a szerver közötti kommunikációhoz. Ennek érdekében az internetkapcsolat elengedhetetlen. A játékosok azonosítását különböző módokon végezhetik:<br><br>
+	Számítógépek esetében a játékosokat például SteamID használatával lehet azonosítani.<br><br>
+	Konzolok esetében a játékosok az adott konzolhoz tartozó felületen történő regisztrációval kaphatnak UserID-t az azonosításhoz.<br><br>
+	Fontos megjegyezni, hogy a játékhoz nincs külön indítóalkalmazás (launcher), így külön regisztrációra nincs szükség. A játékhoz való szerverkapcsolat TCP/IP protokollon keresztül történik.<br><br>
+	</p>
+
+<p><br>
+<br>
+
+</p>
+
+<h1 class="western"><a name="12. Alkalmazott szabv&aacute;nyok|outline"></a>12.
+Alkalmazott szabv&aacute;nyok</h1>
+
+
+<ul>
+	<h2 class="western">12.1. K&ouml;telezően alkalmazand&oacute; szabv&aacute;nyok</h2>
+
+
+	<ul>
+		<p>Valamilyen szintű előírás miatt. (Például törvényi előírás stb.)
+		<li>TC/IP szabvány a többjátékos mód miatt</li>
+		<li>CamelCase névkonvenciók</li>
+		<li>C++ Core Guidelines</li>
+		<li>A kód írásakor fontos számos dologra odafigyelni a kódolás minőségének és olvashatóságának javítása érdekében:</li>
+		<li>Kommentezünk mindent: Minden kódrészletnél adjunk meg megjegyzéseket és magyarázatokat, amelyek segítik a kód megértését. Leírjuk, hogy miért történik az adott művelet, és milyen célt szolgál.</li>
+		<li>Osztályok külön fájlokban: Minden osztályt külön fájlba helyezünk el, hogy rendszerezett és átlátható legyen a projekt struktúrája. Ezzel javítjuk a kód felépítését és karbantarthatóságát.</li>
+		<li>Nyilvános osztályok használata: Az osztályok legyenek nyilvánosak, hogy más részekből is elérhetők legyenek. Így növeljük a moduláris kialakítást és az újrafelhasználhatóságot.</li>
+		<li>Kódolás szellősen: Azáltal, hogy szóközöket helyezünk operátorok és vezérlő utasítások után, javítjuk a kód olvashatóságát és átláthatóságát.
+		<li>Sorhossz korlátozása: Ügyeljünk arra, hogy a sorok ne legyenek túl hosszúak, és ne igényeljenek oldalra görgetést a kódolók számára. Rendszeresen ellenőrizzük és igazítsuk a sorhosszúságokat.</li>
+		<li>Refaktorálás: Rendszeresen vizsgáljuk meg a kódot és mérlegeljük, mely részek igényelnek javítást vagy további kommenteket a jobb megérthetőség érdekében. A refaktorálás segít a kód karbantarthatóságának fenntartásában.</li>
+		<li>PEGI életkori besorolás: Az életkor szerinti besorolást a PEGI által végzett értékelés alapján állapítsuk meg. Ez segít az ügyfeleknek megérteni a játék tartalmát és alkalmas-e a korosztályuknak. </li>
+		Ezen irányelvek és gyakorlatok hozzájárulnak a kód minőségének javításához, az olvashatóság növeléséhez és a projekt karbantarthatóságához. Fontos a rendszeres ellenőrzés és az új információk hozzáadása a kommentekhez annak érdekében, hogy a kód mindig jól dokumentált legyen és könnyen érthető legyen a csapattagok számára.</li>
+		</p>
+	</ul>
+
+	<p><br>
+	<br>
+
+	</p>
+
+	<h2 class="western">12.2. V&aacute;laszt&aacute;s alapj&aacute;n alkalmazott szabv&aacute;nyok</h2>
+
+	<ul>
+		<li>Letisztult grafikai felület a játéknak.</li>
+		<li>Minden fajta képfelbontást támogasson a szoftver, ezen felül többféle grafikai beállítással rendelkezzen.</li>
+		<li>Olvashatók legyenek a szövegek.</li>
+		<li>Beépített szövegszürő, ami kicenzúrázza a nem megengedett szavakat.</li>
+
+	</ul>
+</ul>
+<p></p>
+
+<p><br>
+<br><br>
+
+</p>
+
+
+
+
+</body>
+</html>
