@@ -1,0 +1,515 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html style="direction: ltr;">
+<head>
+
+	
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+
+	
+	
+  <title>Rendszertervezes</title>
+  <meta name="GENERATOR" content="OpenOffice.org 1.1.3  (Win32)">
+
+	
+  <meta name="CREATED" content="20060322;14451816">
+
+	
+  <meta name="CHANGEDBY" content="Lajos Ficsor">
+
+	
+  <meta name="CHANGED" content="20060322;14570266">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+	
+	
+  <style>
+	<!--
+		A:link { color: #0000ff }
+		A:visited { color: #800080 }
+	-->
+	</style>
+</head>
+
+</head>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;font-size:11.0pt;font-family:"Calibri",sans-serif;text-align:center;'><strong><span style="font-size:35px;">RENDSZERTERVEZ&Eacute;S</span></strong></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;font-size:11.0pt;font-family:"Calibri",sans-serif;text-align:center;'><strong><span style="font-size:19px;">T&ouml;rt&eacute;net</span></strong></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;font-size:11.0pt;font-family:"Calibri",sans-serif;'><span style="font-size:19px;">&nbsp;</span></p>
+<table style="border-collapse:collapse;border:none;">
+    <tbody>
+        <tr>
+            <td style="width:66.6pt;border-top:windowtext;border-left:windowtext;border-bottom:black;border-right:black;border-style:solid;border-width:1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;font-size:11.0pt;font-family:"Calibri",sans-serif;line-height:  normal;'><span style="font-size:19px;">D&aacute;tum</span></p>
+            </td>
+            <td style="width:45.55pt;border-top:solid windowtext 1.0pt;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;font-size:11.0pt;font-family:"Calibri",sans-serif;line-height:  normal;'><span style="font-size:19px;">Verzi&oacute;</span></p>
+            </td>
+            <td style="width:225.75pt;border-top:solid windowtext 1.0pt;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;font-size:11.0pt;font-family:"Calibri",sans-serif;line-height:  normal;'><span style="font-size:19px;">Le&iacute;r&aacute;s</span></p>
+            </td>
+            <td style="width:112.85pt;border-top:solid windowtext 1.0pt;border-left:none;border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;font-size:11.0pt;font-family:"Calibri",sans-serif;line-height:  normal;'><span style="font-size:19px;">Szerző</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:66.6pt;border-top:none;border-left:solid windowtext 1.0pt;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;font-size:11.0pt;font-family:"Calibri",sans-serif;line-height:  normal;'><span style="font-size:19px;">2023.11.17</span></p>
+            </td>
+            <td style="width:45.55pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;font-size:11.0pt;font-family:"Calibri",sans-serif;line-height:  normal;'><span style="font-size:19px;">1.0</span></p>
+            </td>
+            <td style="width:225.75pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;font-size:11.0pt;font-family:"Calibri",sans-serif;line-height:  normal;'><span style="font-size:19px;">Kezdeti verzi&oacute;</span></p>
+            </td>
+            <td style="width:112.85pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;font-size:11.0pt;font-family:"Calibri",sans-serif;line-height:  107%;'><span style="font-size:19px;">Kelemen Be&aacute;ta</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:66.6pt;border-top:none;border-left:solid windowtext 1.0pt;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;font-size:11.0pt;font-family:"Calibri",sans-serif;line-height:  normal;'><span style="font-size:19px;">&nbsp;2023.11.18</span></p>
+            </td>
+            <td style="width:45.55pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;font-size:11.0pt;font-family:"Calibri",sans-serif;line-height:  normal;'><span style="font-size:19px;">&nbsp;1.1</span></p>
+            </td>
+            <td style="width:225.75pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;font-size:11.0pt;font-family:"Calibri",sans-serif;line-height:  normal;'><span style="font-size:19px;">&nbsp;M&aacute;sodlagos verzi&oacute;</span></p>
+            </td>
+            <td style="width:112.85pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;font-size:11.0pt;font-family:"Calibri",sans-serif;line-height:  normal;'><span style="font-size:19px;">&nbsp;Buha Mil&aacute;n</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:66.6pt;border-top:none;border-left:solid windowtext 1.0pt;border-bottom:solid windowtext 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;font-size:11.0pt;font-family:"Calibri",sans-serif;line-height:  normal;'><span style="font-size:19px;">&nbsp;2023.11.19</span></p>
+            </td>
+            <td style="width:45.55pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;font-size:11.0pt;font-family:"Calibri",sans-serif;line-height:  normal;'><span style="font-size:19px;">&nbsp;1.2</span></p>
+            </td>
+            <td style="width:225.75pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.0pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;font-size:11.0pt;font-family:"Calibri",sans-serif;line-height:  normal;'><span style="font-size:19px;">&nbsp;</span></p>
+            </td>
+            <td style="width:112.85pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:  0cm 5.4pt 0cm 5.4pt;height:15.0pt;">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;font-size:11.0pt;font-family:"Calibri",sans-serif;line-height:  normal;'><span style="font-size:19px;">&nbsp;</span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p><strong>Tartalomjegyz&eacute;k</strong></p>
+<ol>
+<li><a href="https://users.iit.uni-miskolc.hu/~mileff/szt/Rendszertervezes.html#_Toc130874265"> Bevezet&eacute;s</a></li>
+<li><a href="https://users.iit.uni-miskolc.hu/~mileff/szt/Rendszertervezes.html#_Toc130874266"> Felhaszn&aacute;l&oacute;i fel&uuml;let</a></li>
+<li><a href="https://users.iit.uni-miskolc.hu/~mileff/szt/Rendszertervezes.html#_Toc130874267"> Adatmodellek</a></li>
+
+<p><a href="https://users.iit.uni-miskolc.hu/~mileff/szt/Rendszertervezes.html#_Toc130874268">3.1. Adatb&aacute;zis kezelő kiv&aacute;laszt&aacute;sa</a></p>
+<p><a href="https://users.iit.uni-miskolc.hu/~mileff/szt/Rendszertervezes.html#_Toc130874269">3.2. Szemantikai adatmodell</a></p>
+<p><a href="https://users.iit.uni-miskolc.hu/~mileff/szt/Rendszertervezes.html#_Toc130874270">3.3 Rel&aacute;ci&oacute;s adatmodell</a></p>
+<p><a href="https://users.iit.uni-miskolc.hu/~mileff/szt/Rendszertervezes.html#_Toc130874271">3.4. Az adatb&aacute;zis kezelővel kapcsolatot tart&oacute; oszt&aacute;lyok</a></p>
+
+<li><a href="https://users.iit.uni-miskolc.hu/~mileff/szt/Rendszertervezes.html#_Toc130874272"> A funkcion&aacute;lis modell kieg&eacute;sz&iacute;t&eacute;se</a></li>
+</ol>
+<header>
+    <h1>Bevezetés</h1>
+    <p>
+        A "The Uni Saga" egy rendkívül izgalmas és részletgazdag online szerepjáték, amely egy egyetemi környezetben játszódik. A játék koncepciója arra épül, hogy a játékosok beleélhessék magukat az egyetemi élet mindennapjaiba, ugyanakkor fantasztikus elemekkel tűzdelt kalandok részeseivé váljanak. A játék célja, hogy egy valósághű, mégis lenyűgözően színes és interaktív virtuális egyetemi élményt nyújtson a felhasználóknak.
+    </p>
+</header>
+
+<section>
+    <h2>Játékvilág</h2>
+    <p>
+        A "The Uni Saga" világa egy egyetemi campus és annak környéke. A játékosok számára lehetőség nyílik felfedezni a különböző épületeket, részt venni előadásokon, találkozni más karakterekkel, és természetesen, részt venni különféle kihívásokban és küldetésekben.
+    </p>
+</section>
+
+<section>
+    <h2>Célkitűzések</h2>
+    <p>
+        Az egyetemi élet valósághű és szórakoztató megjelenítése. A fantasy és kaland elemek hozzáadása, amelyek lehetővé teszik a játékosok számára, hogy egyedi karaktereket fejlesszenek és részt vegyenek lenyűgöző történetekben.
+    </p>
+</section>
+
+<section>
+    <h2>A Történet Háttere</h2>
+    <p>
+        A játék története egy kitalált egyetem köré fonódik, ahol különféle varázslatos és misztikus események történnek. A játékosoknak feladata megvizsgálni és megoldani ezeket a rejtélyeket, miközben egyetemi életüket is élvezik.
+    </p>
+</section>
+
+<section>
+    <h2>Játékstílus</h2>
+    <p>
+        A játékosoknak szabadon választható karaktereket kell irányítaniuk, akik különféle szakokat választhatnak, részt vehetnek sporteseményeken, vagy akár maguk is létrehozhatnak csoportokat és klubokat. A játékstílus sokszínű, és minden játékosnak lehetősége van saját útját járni az egyetemi életben.
+    </p>
+</section>
+
+<section>
+    <h2>Játékmenet</h2>
+    <p>
+        A játékosoknak küldetéseket kell teljesíteniük, vizsgákat tenniük, barátságokat és ellenséges viszonyokat kialakítaniuk, miközben egy sor különféle fantasy lény és varázslat között élnek. A játékmenet alapján a karakterek fejlődnek, és az egyetemi év során új kihívásokkal találják szemben magukat.
+    </p>
+</section>
+
+<section>
+    <h2>Felhasználói felület</h2>
+    <p>
+        A "The Uni Saga" rendszertervezése során a felhasználói felület különös figyelmet kap, hiszen ez a játékosok közvetlen interakciójának a helyszíne. A felhasználói felület tervezése során az alábbi fontos szempontokat vesszük figyelembe:
+    </p>
+    <h3>Bejelentkezés és Regisztráció</h3>
+    <p>
+        A bejelentkezési és regisztrációs folyamatoknak intuitívnak és egyszerűnek kell lenniük. A felhasználók könnyen hozzon létre fiókot, és biztonságosan jelentkezzen be a játékba. A regisztráció során a felhasználóra vonatkozó adatok megadása, ezek közé tartozik a név, e-mail, telefonszám, felhasználónév és jelszó kiválasztása, de lehetőségük van Facebook, Google, Apple,Xbox fiókkal is. Majd a későbbiekben ezek megadásával tudunk bejelentkezni.
+    </p>
+</section>
+<section>
+    <h2>Főmenü</h2>
+    <p>
+        A főmenü az elsődleges hely a játékon belüli navigációhoz és funkciók eléréséhez. Az alábbiakban néhány fontos menüpontot sorolunk fel:
+    </p>
+    <ul>
+        <li>Új játék kezdése - Innen indíthatjuk el a karakterünk kalandját, létrehozva egy új játékmenetet.</li>
+        <li>Korábban mentett játék betöltése - Ha korábban mentettünk egy játékállást, innen tölthetjük be azt.</li>
+        <li>Beállítások - A beállítások menüpont alatt számos opció található, például grafikai beállítások, hang, irányítás stb.</li>
+        <li>Karakter - Ezen a területen lehetőség van a karakterünk statisztikáinak és felszerelésének részletes megtekintésére, valamint módosítására.</li>
+        <li>Chat - Itt érhető el a játék belső kommunikációs rendszere, beleértve a chatet és más kapcsolódó funkciókat.</li>
+        <li>Kilépés - Ezzel a gombbal tudjuk bezárni a játékot.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Szociális Menüpontok</h2>
+    <p>
+        A főmenüben találhatók olyan opciók, mint "Barátok" vagy "Szövetségek", ahol a játékosok kezelhetik kapcsolataikat más játékosokkal. Itt lehetőség van barátokhoz csatlakozni, szövetségeket kötni és kommunikálni.
+    </p>
+</section>
+
+<section>
+    <h2>Küldetések és Feladatok</h2>
+    <p>
+        A főmenüben található "Küldetések" rész áttekintést nyújthat a jelenlegi és elérhető küldetésekről. Ez segíti a játékosokat az aktuális célok meghatározásában és a fejlődésben.
+    </p>
+</section>
+
+<section>
+    <h2>Térkép</h2>
+    <p>
+        Az interaktív térkép segítségével a játékosok könnyen navigálhatnak az egyetemi campuson és annak környékén. Pontok jelzik az elérhető küldetéseket, fontos helyszíneket és más játékosok pozícióit.
+    </p>
+</section>
+
+<section>
+    <h2>Stílus és Megjelenés</h2>
+    <p>
+        A felhasználói felület stílusa az egyetemi hangulathoz igazodik, ugyanakkor tartalmaz fantasztikus elemeket is. Az egyszerű navigáció és a látványos grafika hozzájárulnak a felhasználói élményhez.
+    </p>
+</section>
+
+<section>
+    <h2>Animációk és Effektek</h2>
+    <p>
+        Az interaktív elemek és animációk fokozzák a felhasználói élményt. Például, karakterek közötti interakciók, küldetések sikeres teljesítésekor megjelenő effektek.
+    </p>
+</section>
+
+<section>
+    <h2>Hibaüzenetek és Segítség</h2>
+    <p>
+        A felhasználói felület tartalmaz informatív hibaüzeneteket és segítséget nyújtó szekciókat, hogy a játékosok könnyen megértsék a rendszer üzeneteit és feladataikat. Ezek a következő területekre terjedhetnek ki:
+    </p>
+    <ul>
+        <li>Hangbeállítások - Problémák a mikrofonnal vagy hangszórókkal. Hangminőségi problémák, mint például zaj vagy torzítás.</li>
+        <li>Irányítás - Játékvezérlőkkel vagy billentyűzet és egér beállításokkal kapcsolatos problémák. Útmutató a játékvezérlés testreszabásához.</li>
+        <li>Nyelvi Beállítások - Nyelvi beállításokkal és fordítási problémákkal kapcsolatos segítség. Többnyelvű támogatás és helyi nyelvi beállítások.</li>
+        <li>Hálózati Kapcsolat - Hálózati problémák, mint például megszakadt vagy lassú kapcsolatok. Segítség a hálózati beállítások optimalizálásában.</li>
+    </ul>
+</section>
+<section>
+    <h2>Grafikai Beállítások</h2>
+    <p>
+        Segítség a grafikai beállítások optimalizálásában, különböző hardverkonfigurációkhoz.
+    </p>
+    <p>
+        Hibaüzenetek grafikai problémák esetén, mint például képfrissítési hibák.
+    </p>
+</section>
+
+<section>
+    <h2>Felhasználói Fiók és Biztonság</h2>
+    <p>
+        Segítség a felhasználói fiókokkal kapcsolatos problémákban, mint például bejelentkezési hibák.
+    </p>
+    <p>
+        Útmutatás a fiókbiztonsági kérdésekben, mint például jelszó-visszaállítás.
+    </p>
+</section>
+
+<section>
+    <h2>Játékmenet</h2>
+    <p>
+        Útmutató a játék alapvető mechanikáihoz és játékmenethez.
+    </p>
+    <p>
+        Segítség a küldetések vagy szintek megrekedése esetén.
+    </p>
+    <p>
+        Az alábbi képen látható a szoftverünk felhasználói felülete.
+    </p>
+    <!-- Add an image tag here with the source attribute pointing to your software interface image -->
+    <p>
+        A fentebb írt pontok által kigondolt megvalósulása.
+    </p>
+</section>
+
+<section>
+    <h2>Adatmodellek</h2>
+    <p>
+        A rendszer adatmodellezése kiemelkedő fontosságú a "The Uni Saga" fejlesztése során. A következő részekben olvashatunk az adatmodellek különböző aspektusairól, beleértve a választott adatbázis kezelőt, a szemantikai adatmodellt és a relációs adatmodellt.
+    </p>
+</section>
+<h3>Adatbázis kezelő kiválasztása</h3>
+<p>
+    A játékhoz MySQL adatbázis-kezelőt választottunk. Ennek választása mögött a hatékony adatkezelés 
+    és a kiterjedt támogatottság áll. A MySQL lehetővé teszi az összetett adatok kezelését és a 
+    kapcsolatok hatékony modellezését, ami ideális a játék komplex adatstruktúráinak tárolására.
+</p>
+<h3>Szemantikai Adatmodell</h3>
+<p>
+    A szemantikai adatmodell a játékban használt entitásokat és azok közötti kapcsolatokat definiálja.
+</p>
+</section>
+<p><center><img style="width: 80%" src="ER_szoftech.png"></center></p>
+<section>
+    <h1>The UNI Saga Data Model Documentation</h1>
+
+    <h2>Egyedek és Attribútumok</h2>
+
+    <h3>Achievement (Teljesítmény)</h3>
+    <p>
+        Attribútumok: achievement_id, name, access_condition, reward<br>
+        Leírás: A játékban elérhető különböző teljesítmények, feltételekkel és jutalmakkal.
+    </p>
+
+    <h3>Player (Játékos)</h3>
+    <p>
+        Attribútumok: player_id, username, password<br>
+        Leírás: A játékban résztvevő felhasználók alapvető adatai.
+    </p>
+
+    <h3>UserProfile (Felhasználói Profil)</h3>
+    <p>
+        Attribútumok: profile_id, player_id, status<br>
+        Leírás: A játékosok személyes profiljai, állapotokkal.
+    </p>
+
+    <h3>GamePreferences (Játékpreferenciák)</h3>
+    <p>
+        Attribútumok: preference_id, language, notification_setting<br>
+        Leírás: A játékosok játékbeli preferenciái, beleértve a nyelvet és értesítési beállításokat.
+    </p>
+
+    <h3>Character (Karakter)</h3>
+    <p>
+        Attribútumok: character_id, name, level, skills, stats, class<br>
+        Leírás: A játékosok által irányított karakterek, képességekkel és statisztikákkal.
+    </p>
+
+    <h3>Inventory (Leltár)</h3>
+    <p>
+        Attribútumok: inventory_id, item_list<br>
+        Leírás: A karakterek leltárai, tárgylistákkal.
+    </p>
+
+    <h3>Item (Tárgy)</h3>
+    <p>
+        Attribútumok: item_id, name, type<br>
+        Leírás: A játékban megtalálható tárgyak, típusokkal.
+    </p>
+
+    <h3>Mission (Küldetés)</h3>
+    <p>
+        Attribútumok: mission_id, name, description, reward<br>
+        Leírás: A játékban elérhető küldetések, leírásokkal és jutalmakkal.
+    </p>
+
+    <h3>GraphicsSettings (Grafikai Beállítások)</h3>
+    <p>
+        Attribútumok: setting_id, resolution, shadows, texture_quality<br>
+        Leírás: A játék grafikai beállításai.
+    </p>
+
+    <h3>ControlSettings (Irányítási Beállítások)</h3>
+    <p>
+        Attribútumok: setting_id, mouse, macros, keyboard<br>
+        Leírás: A játék irányítási beállításai.
+    </p>
+
+    <h3>AudioSettings (Hangbeállítások)</h3>
+    <p>
+        Attribútumok: setting_id, music, effects, voice<br>
+        Leírás: A játék hangbeállításai.
+    </p>
+
+    <h2>Kapcsolatok</h2>
+
+    <p>Achievement - Player: N:1</p>
+    <p>Sok teljesítmény kapcsolódik egy játékoshoz, aki ezeket elérheti.</p>
+
+    <p>Player - UserProfile: 1:1</p>
+    <p>Minden játékoshoz pontosan egy felhasználói profil tartozik.</p>
+
+    <p>Player - Character: 1:N</p>
+    <p>Egy játékosnak több karaktere is lehet a játékban.</p>
+
+    <p>Character - Inventory: 1:1</p>
+    <p>Minden karakterhez egy leltár tartozik.</p>
+
+    <p>Character - Mission: 1:N</p>
+    <p>Egy karakter több küldetésben is részt vehet.</p>
+
+    <p>Inventory - Item: 1:N</p>
+</section>
+<h3>Inventory (Leltár)</h3>
+<p>
+    Attribútumok: inventory_id, item_list<br>
+    Leírás: A karakterek leltárai, tárgylistákkal.
+</p>
+
+<h3>Item (Tárgy)</h3>
+<p>
+    Attribútumok: item_id, name, type<br>
+    Leírás: A játékban megtalálható tárgyak, típusokkal.
+</p>
+
+<h2>Kapcsolatok</h2>
+
+<!-- Previous relationships -->
+
+<p>Inventory - Item: 1:N</p>
+<p>Egy leltárban több tárgy is lehet.</p>
+
+<p>UserProfile - GamePreferences: 1:N</p>
+<p>Egy felhasználói profil több játékpreferenciához kapcsolódhat.</p>
+
+<p>GamePreferences - GraphicsSettings: 1:1</p>
+<p>Minden játékpreferencia egy grafikai beállításhoz kapcsolódik.</p>
+
+<p>GamePreferences - ControlSettings: 1:1</p>
+<p>Minden játékpreferencia egy irányítási beállításhoz kapcsolódik.</p>
+
+<p>GamePreferences - AudioSettings: 1:1</p>
+<p>Minden játékpreferencia egy hangbeállításhoz kapcsolódik.</p>
+
+<h2>Relációs Adatmodell</h2>
+
+<p>A relációs adatmodell a szemantikai adatmodellt konkrét táblákká és kapcsolatokká alakítja át.</p>
+
+<h3>Relációs Adatmodell Táblái</h3>
+
+<h4>Achievements</h4>
+<p>
+    Columns: achievement_id (PK), name, access_condition, reward<br>
+    Kapcsolatok: Achievements_Player (FK: player_id)
+</p>
+
+<h4>Players</h4>
+<p>
+    Columns: player_id (PK), username, password<br>
+    Kapcsolatok: UserProfile (FK: profile_id), Characters (FK: character_id), Achievements_Player (FK: achievement_id)
+</p>
+
+<h4>UserProfiles</h4>
+<p>
+    Columns: profile_id (PK), player_id (FK), status<br>
+    Kapcsolatok: GamePreferences (FK: preference_id)
+</p>
+
+<!-- Add additional tables and relationships as needed -->
+
+</section>
+<ul>
+    <li>reg_date: regisztrációs dátum</li>
+    chat entity:
+       
+<li><ul> history: a chat historyt tárolja</li></ul>
+<li>last: legutóbbi üzenete</li>
+<li> ban: van-e chat banja/li>
+
+</ul>
+<section>
+    <h1>The Uni Saga - Data Model Documentation</h1>
+
+    <!-- Data Model -->
+    <h2>Data Model - Relational Database</h2>
+
+    <!-- Table: Achievements -->
+    <h3>Achievements</h3>
+    <p>
+        Columns: achievement_id (PK), name, access_condition, reward<br>
+        Relationships: Achievements_Player (FK: player_id)
+    </p>
+
+    <!-- Table: Players -->
+    <h3>Players</h3>
+    <p>
+        Columns: player_id (PK), username, password<br>
+        Relationships: UserProfile (FK: profile_id), Characters (FK: character_id), Achievements_Player (FK: achievement_id)
+    </p>
+
+    <!-- Table: UserProfiles -->
+    <h3>UserProfiles</h3>
+    <p>
+        Columns: profile_id (PK), player_id (FK), status<br>
+        Relationships: GamePreferences (FK: preference_id)
+    </p>
+
+    <!-- Table: GamePreferences -->
+    <h3>GamePreferences</h3>
+    <p>
+        Columns: preference_id (PK), language, notification_setting<br>
+        Relationships: GraphicsSettings (FK: setting_id), ControlSettings (FK: setting_id), AudioSettings (FK: setting_id)
+    </p>
+
+    <!-- Add additional tables and relationships as needed -->
+
+    <!-- Functional Models -->
+    <h2>Funkciónális modellek</h2>
+
+    <!-- Interaction among Characters -->
+    <h3>Interakció a karakterek között</h3>
+
+    <p><strong>Csevegés</strong>: A karakterek közötti szöveges kommunikáció lehetősége, amely a közösségépítés és a stratégiai tervezés szempontjából kulcsfontosságú.</p>
+
+    <p><strong>Szövetségek Kialakítása</strong>: A játékosoknak lehetősége van szövetségek és csoportok létrehozására, amelyek segítik egymást a küldetések során és a játékmenettől függően.</p>
+
+    <p><strong>Küldetések Teljesítése</strong>: A karakterek küldetéseket teljesítenek, amelyek a játék fő eseményeit képviselik.</p>
+
+    <!-- Add additional functional models and content as needed -->
+
+</section>
+<p><strong>Küldetések Elérhetővé Tétele</strong>: A játékosok megtekinthetik a rendelkezésre álló küldetéseket a főmenüből.</p>
+
+<p><strong>Küldetések Elfogadása</strong>: A játékosok kiválaszthatnak egy küldetést és elfogadhatják azt a karakterük számára.</p>
+
+<p><strong>Küldetés Elvégzése</strong>: A karakterek részt vesznek a kiválasztott küldetésben, amely során különböző feladatokat teljesítenek.</p>
+
+<p><strong>Jutalmak és Fejlődés</strong>: Sikeres küldetés teljesítés esetén a karakterek jutalmakat kapnak, például tapasztalatpontokat, felszereléseket vagy más erőforrásokat, és fejlődnek a szintlépés során.</p>
+
+<p><strong>Karakterfejlődés</strong>: A karakterek fejlődése a játék egyik kulcspontja.</p>
+
+<p><strong>Szintlépés</strong>: A karakterek szintlépése különböző tevékenységek és küldetések során történik, amelyek növelik a karakter képességeit.</p>
+
+<p><strong>Készségfejlesztés</strong>: A karakterek speciális készségeket sajátíthatnak el, amelyek hatékonyabbá teszik őket a küldetések során.</p>
+
+<p><strong>Felszerelések Változtatása</strong>: A karakterek cserélhetik felszereléseiket, optimalizálva azokat a játékstílusuknak megfelelően.</p>
+
+<!-- Add additional content as needed -->
+
+</section>
+
+<h3>Felhasználói Interfész</h3>
+<p>A felhasználói felület a fentebb említett feldolgozási lépéseknek megfelelően kialakított navigációt és interakciót biztosít a játékosok számára. A menük, gombok és egyéb elemek intuitívak és könnyen érthetőek, hogy a felhasználók egyszerűen eligazodhassanak a játékban.</p>

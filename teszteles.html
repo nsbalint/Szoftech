@@ -1,0 +1,1752 @@
+<center><h1>H5 - TESZTELÉS</h1></center>
+<head>
+
+	
+    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  
+      
+      
+    <title>ANAL&Iacute;ZIS MODELL</title>
+    <meta name="GENERATOR" content="OpenOffice.org 1.1.3  (Win32)">
+  
+      
+    <meta name="CREATED" content="20060322;14451816">
+  
+      
+    <meta name="CHANGEDBY" content="Lajos Ficsor">
+  
+      
+    <meta name="CHANGED" content="20060322;14570266">
+  <!--[if !mso]>
+  <style>
+  v\:* {behavior:url(#default#VML);}
+  o\:* {behavior:url(#default#VML);}
+  w\:* {behavior:url(#default#VML);}
+  .shape {behavior:url(#default#VML);}
+  </style>
+  <![endif]-->
+      
+      
+    <style>
+      <!--
+          A:link { color: #0000ff }
+          A:visited { color: #800080 }
+      -->
+      </style>
+  </head>
+
+<body>
+<table border="1" bordercolor="#000000" cellpadding="2" cellspacing="1">
+
+	<thead>
+		<tr valign="top">
+
+			<td width="95">
+				
+    <p>D&aacute;tum</p>
+
+			</td>
+
+			<td width="65">
+				
+    <p>Verzi&oacute;</p>
+
+			</td>
+
+			<td width="322">
+				
+    <p>Le&iacute;r&aacute;s</p>
+
+			</td>
+
+			<td width="161">
+				
+    <p>Szerző</p>
+
+			</td>
+
+		</tr>
+
+	</thead>
+	<tbody>
+
+		<tr valign="top">
+
+			<td width="95">
+				
+      <p>2023.11.30</p>
+
+			</td>
+
+			<td width="65">
+				
+      <p>1.0</p>
+
+			</td>
+
+			<td width="322">
+				
+      <p>Kezdeti verzi&oacute;</p>
+
+			</td>
+
+			<td width="161">
+				
+      <p>Kelemen Beáta</p>
+
+			</td>
+
+		</tr>
+
+		<tr valign="top">
+
+			<td width="95">
+				
+      <p>2023.12.02</p>
+
+			</td>
+
+			<td width="65">
+				
+      <p>1.1</p>
+
+			</td>
+
+			<td width="322">
+				
+      <p>Másodlagos verzió</p>
+
+			</td>
+
+			<td width="161">
+				
+      <p>Nádpataki-Sass Bálint</p>
+
+			</td>
+
+		</tr>
+
+		<tr valign="top">
+
+			<td width="95">
+				
+      <p></p>
+
+			</td>
+
+			<td width="65">
+				
+      <p></p>
+
+			</td>
+
+			<td width="322">
+				
+      <p></p>
+
+			</td>
+
+			<td width="161">
+				
+      <p> <br></p>
+
+			</td>
+
+		</tr>
+
+	
+  </tbody>
+</table>
+
+<h2>Tartalomjegyzék</h2>
+
+<ol>
+  <li>
+    <h3>Bevezetés:</h3>
+    <ul>
+      <li>A The Uni Saga játék jellemzői</li>
+      <li>Tesztelés fontossága a fejlesztési folyamatban</li>
+    </ul>
+  </li>
+  <li>
+    <h3>Tesztelések ismertetése</h3>
+    <ul>
+      <li>Automatikus és kézi tesztelési folyamatok</li>
+      <li>Felhasználói felület tesztelése</li>
+      <li>Egységtesztelés és tranzakciós tesztelés</li>
+      <li>Adatbázis és backend tesztelése</li>
+    </ul>
+  </li>
+  <li>
+    <h3>Rendszer vezérlésének kidolgozása</h3>
+    <ul>
+      <li>Osztályok közötti kapcsolatok implementálása</li>
+      <li>Aktív és passzív objektumok szerepe</li>
+      <li>Vezérlő objektumok és szerepük</li>
+    </ul>
+  </li>
+  <li>
+    <h3>Metódusok és Tulajdonságok</h3>
+    <ul>
+      <li>Játékos Karakter Osztály</li>
+      <li>NPC Osztály</li>
+      <li>Küldetés Osztály</li>
+      <li>Képes Küldetéseket Kezelni Interfész</li>
+    </ul>
+  </li>
+  <li>
+    <h3>Tesztelési Stratégia</h3>
+    <ul>
+      <li>Egységtesztek és kapcsolati tesztek</li>
+      <li>Interfész tesztek</li>
+      <li>Csomagok vagy Névterek definiálása</li>
+    </ul>
+  </li>
+  <li>
+    <h3>Implementáció</h3>
+    <ul>
+      <li>Nyelv és fejlesztői környezet kiválasztása</li>
+      <li>Osztályok implementálása</li>
+      <li>Csomagok és névterek definíciója</li>
+      <li>Csomagok közötti kapcsolatok kidolgozása</li>
+      <li>Implementációs egységek definiálása</li>
+      <li>Tesztelési egységek és modulok</li>
+    </ul>
+  </li>
+  <li>
+    <h3>Tesztelés</h3>
+    <ul>
+      <li>Egységtesztek és modultesztek</li>
+      <li>Dokumentáció</li>
+      <li>Kód dokumentáció</li>
+      <li>Felhasználói dokumentáció</li>
+      <li>Tesztelési terv kidolgozása</li>
+      <li>Tesztelési célok meghatározása</li>
+      <li>Tesztesetek kidolgozása</li>
+      <li>Tesztelési környezet kialakítása</li>
+      <li>Tesztelési stratégia kidolgozása</li>
+      <li>Tesztelési esetek priorizálása</li>
+      <li>Tesztadatok kialakítása</li>
+      <li>Tesztelési folyamatok és eljárások</li>
+      <li>Hibák jelentése és követése</li>
+      <li>Elfogadási tesztek</li>
+      <li>Visszajelzés és finomhangolás</li>
+    </ul>
+  </li>
+  <li>
+    <h3>Néhány konkrét tesztelési példa</h3>
+  </li>
+</ol>
+
+<h2>Bevezetés</h2>
+
+<p>Ez a dokumentum célja, hogy átfogó és részletes betekintést nyújtson a játék fejlesztése során végzett tesztelési folyamatokba. A The Uni Saga egy izgalmas online többjátékos szerepjáték, melynek fejlesztése során kiemelt figyelmet fordítottunk a játékélmény optimalizálására és a felhasználói élmény fokozására.</p>
+
+<h2>Tesztelések Ismertetése</h2>
+
+<p>Tesztelésünk során automatikus tesztelést szeretnénk véghez vinni, hogy minél hibamentesebben tudjuk fejleszteni a szoftvert, amennyiben szükséges a kézi tesztelést sem vetjük meg. Az előbbi tesztelési forma könnyen megismételhető, konkrétan meghatározásra kerülnek a tesztesetek, ezáltal a hiba esélye is minimalizálódik. Fontosnak tartjuk, hogy mivel a játékosok első benyomását a felhasználói felület alakítja, emiatt figyelemmel kísérjük felhasználói szemszögből is a játékot, tesztelésnek vetjük alá, hogy minél közelebbről láthassuk az ő szemszögükből felmerülő hibákat.</p>
+
+<p>Szeretnénk az osztályokat külön is tesztelni, hogy az automatikus egységtesztelést alkalmazva, láthatjuk, hogy hibamentesek-e és helyesen működnek-e az osztályok. A játékban lehetőség van korlátozott mennyiségben vásárlásra is, ahogy korábban említettük, de szem előtt tartva, hogy azok a játékosok, akik nem kívánnak élni a lehetőséggel ne kerüljenek hátrányba. Emiatt szükségünk van tranzakciós tesztelésre is. Tehát mikor a játékos azonnali utalással, minél hamarabb hozzá szeretne jutni a megvásárolt eszközéhez, pontjához, ez lehetővé is váljon számára. Ezekhez tranzakció szimulációkat alkalmazunk automatikus teszteléssel.</p>
+
+<p>A játékosokról számos adatot tárolunk az adatbázisunkban, tehát elengedhetetlen, hogy ez is helyesen működjön. Mindig naprakész adatokkal rendelkezzünk és ezek megegyezzenek. Fontos megjegyezni, hogy ezek az adatok, kizárólag számunkra elérhetőek. Mivel backend-et is alkalmazunk az online játék során ezért ez is ellenőrizve lesz. Átláthatóság érdekében folyamatosan dokumentálunk, melyeknél odafigyelünk a logikus felépítésre, hogy a későbbiek során, akár egy hibajavításkor vagy bármilyen más problémakör gördülékenyen megtalálhassuk az adott adatot. Például időrendben tároljuk az adatokat, ABC sorrend szerint rendezzük a felhasználói adatokat. Ahhoz hogy az adatbázisunk minél strapabíróbb legyen, és túlterheltség ideje alatt se történjen semmilyen komoly leállás és a felhasználói élmény megmaradjon szintén fontos a terheléses tesztelés, hogy ne omoljon össze a rendszer.</p>
+<h2>Osztályok Közötti Kapcsolatok Implementálásának Kidolgozása</h2>
+
+<p><strong>Aktív és Passzív Objektumok:</strong></p>
+<ul>
+  <li><strong>Aktív objektumok:</strong> A The Uni Saga egy dinamikus és interaktív világot kínál, ahol az aktív objektumok, mint például a játékos karakterek és NPC-k, fontos szerepet játszanak. Minden karakter rendelkezik saját egyedi tulajdonságokkal és képességekkel, amelyekkel interakcióba léphet más objektumokkal, legyen az egy másik karakter vagy egy kihívást jelentő ellenfél. Az aktív objektumok képesek változtatni állapotukon, például a mozgáson keresztül, és részt vehetnek a dinamikus eseményekben.</li>
+  <li><strong>Passzív objektumok:</strong> A játék világát gazdagítják a passzív objektumok, mint például térkép elemek, tárgyak és épületek. Ezek nem interaktívak, de jelentős hatással vannak a környezetre és a játékmenetre. A passzív objektumok tárolnak információkat, például térképadatokat és tárgyleírásokat, amelyek segítik a játékosokat a világ felfedezésében és megértésében.</li>
+</ul>
+
+<p><strong>Vezérlő Objektumok:</strong></p>
+<ul>
+  <li><strong>Játékvezérlő:</strong> A fő vezérlő objektum a játékmenet irányításáért felelős. Ez a rendszer kezeli a küldetéseket, eseményeket és biztosítja a játékosok közötti kommunikációt. A játékvezérlő a dinamikus tartalomért felelős, például a változatos küldetések és események biztosítása, amelyek folyamatos kihívásokat kínálnak a játékosoknak.</li>
+  <li><strong>Állapotkezelő:</strong> Az állapotkezelő objektum felelős a játék különböző állapotainak kezeléséért, például a kezdőképernyő vagy a játék közbeni állapotok. Ez lehetővé teszi a sima átmenetet a játék különböző szakaszai között, például a karakter kiválasztásától a küldetések végéig.</li>
+  <li><strong>Eseménykezelő:</strong> Az eseménykezelő rendszer figyeli és kezeli a játékban bekövetkező eseményeket. Amikor egy karakter meghal vagy egy küldetés elér egy fontos mérföldkövet, az eseménykezelő aktív objektumokat aktivál, hogy reagáljanak a változásokra.</li>
+</ul>
+
+<p><strong>Láthatóság és Üzenetváltások:</strong></p>
+<ul>
+  <li><strong>Láthatóság biztosítása:</strong> A játék valóságosabbá tétele érdekében az aktív objektumok láthatóságát távolság alapján szabályozzuk. Ez azt jelenti, hogy a karakterek csak bizonyos távolságokon belül láthatják egymást, ami növeli a taktikai elemeket és a felfedezés izgalmát. A passzív objektumok láthatósága során a térkép elemek és épületek fokozatosan jelennek meg a játék során, ahogy a karakterek felfedezik a világot.</li>
+  <li><strong>Üzenetváltások:</strong> Az objektumok közötti kommunikációt és üzenetváltásokat egy kifinomult rendszer biztosítja, és a socket.io segíti. A játékosok közötti üzenetküldés és rendszerüzenetek segítik a szorosabb közösség kialakulását és a játékosok együttműködését. Az üzenetrendszer gondoskodik a hatékony kommunikációról, például a csapatban való együttműködés vagy a stratégiai tervezés során.</li>
+</ul>
+
+<h2>Játékos Karakter Osztály</h2>
+<p>A Játékos Karakter osztály kezeli a játékosokat, és számos metódust és tulajdonságot tartalmaz a következőképpen:</p>
+<ul>
+  <li><strong>init(attributes):</strong> A karakter létrehozásakor inicializálja a játékos tulajdonságait.</li>
+  <li><strong>move(destination):</strong> A karakter mozgatása a térképen az adott célhelyre.</li>
+  <li><strong>interact(target):</strong> Az objektumokkal, beleértve NPC-ket és más játékosokat való interakció.</li>
+  <li><strong>initiate_quest(quest):</strong> Küldetés kezdeményezése, amely új kihívásokat és célokat kínál a játékosnak.</li>
+</ul>
+
+<h2>NPC Osztály</h2>
+<p>A NPC osztály reprezentálja a nem-játékos karaktereket, és különböző metódusokkal rendelkezik:</p>
+<ul>
+  <li><strong>init(attributes):</strong> Az NPC tulajdonságainak inicializálása a létrehozáskor.</li>
+  <li><strong>talk(player):</strong> Beszélgetés a játékos karakterrel, amely információkat vagy küldetéseket kínál.</li>
+  <li><strong>give_quest(player):</strong> Küldetés adása a játékosnak, amelyet teljesítenie kell.</li>
+</ul>
+
+<h2>Küldetés Osztály</h2>
+<p>A Küldetés osztály kezeli a játékosok által elfogadott és teljesített küldetéseket:</p>
+<ul>
+  <li><strong>init(details):</strong> A küldetés részleteinek inicializálása a létrehozáskor.</li>
+  <li><strong>accept_quest(player):</strong> A játékos általi elfogadás és a küldetés elindítása.</li>
+  <li><strong>complete_quest(player):</strong> A küldetés befejezése és jutalmak kiosztása.</li>
+</ul>
+
+<h2>Interfészek (Interfaces)</h2>
+<p><strong>Képes Küldetéseket Kezelni Interfész:</strong> Ez az interfész definiálja azokat a metódusokat, amelyeket minden karakter osztálynak implementálnia kell, hogy képes legyen küldetéseket kezelni:</p>
+<ul>
+  <li><strong>initiate_quest(quest):</strong> A karakter képes kezdeményezni küldetéseket.</li>
+  <li><strong>accept_quest(player):</strong> A karakter elfogadja a küldetéseket.</li>
+</ul>
+
+<h2>Tesztelési Stratégia</h2>
+<p><strong>Egységtesztek:</strong></p>
+<ul>
+  <li>Tesztelni a move metódust, hogy ellenőrizze, hogy a játékos karakter helyesen mozog-e a térképen.</li>
+  <li>Ellenőrizni az interact metódust, hogy biztosítva legyen, hogy az interakciók jól működnek más objektumokkal.</li>
+  <li>Tesztelni a give_quest metódust, hogy ellenőrizze, hogy az NPC-k helyesen adják-e a küldetéseket.</li>
+  <li>Ellenőrizni a complete_quest metódust, hogy a küldetések befejezése helyesen történik-e.</li>
+</ul>
+
+<h2>1. Csomagok (Packages) vagy Névterek (Namespaces) Definiálása:</h2>
+
+<h3>Játéklogika Csomag:</h3>
+<p>Ebben a csomagban találhatók azok az osztályok és modulok, amelyek felelősek a játékmenetért. Ide tartoznak például a karakterek, küldetések és csaták kezeléséért felelős osztályok.</p>
+
+<h3>Grafika Csomag:</h3>
+<p>Ebben a csomagban találhatók a grafikával kapcsolatos osztályok, amelyek az animációk, effektek és a játék világának megjelenítéséért felelnek.</p>
+
+<h3>Adatbázis Csomag:</h3>
+<p>Ez a csomag tartalmazza az adatbázis-kezeléssel kapcsolatos osztályokat, amelyek felelősek a karakterek és küldetések adatainak tárolásáért.</p>
+
+<h2>2. Csomagok Struktúrájának Kidolgozása:</h2>
+
+<h3>Játéklogika Csomag:</h3>
+<ul>
+  <li>Alcsomagok: "Karakterek," "Küldetések," "Csaták."</li>
+  <li>Osztályok: Olyan osztályok, amelyek a karakterek kezeléséért, küldetések logikájáért és csaták irányításáért felelnek.</li>
+</ul>
+
+<h3>Grafika Csomag:</h3>
+<ul>
+  <li>Alcsomagok: "Animációk," "Effektek," "Világ Megjelenítése."</li>
+  <li>Osztályok: Az alcsomagokban található grafikai elemekért felelős osztályok.</li>
+</ul>
+
+<h3>Adatbázis Csomag:</h3>
+<ul>
+  <li>Alcsomagok: "Karakter Adatok," "Küldetés Adatok."</li>
+  <li>Osztályok: Az alcsomagokban található adatbáziskezelő osztályok.</li>
+</ul>
+
+<h2>3. Csomagok Közötti Kapcsolatok Kidolgozása:</h2>
+
+<h3>Játéklogika és Grafika Csomagok:</h3>
+<p>Az interfészek segíthetnek a hatékony kommunikációban. Például az "Animációk" csomag az "AnimációKezelő" interfészt implementálhatja, amit a játéklogika csomag használ.</p>
+
+<h3>Játéklogika és Adatbázis Csomagok:</h3>
+<p>Az adatok hatékony kezeléséhez az adatbázis csomag interfészeket nyújthat a játéklogika csomag részére, például "KarakterAdatKezelő" interfész.</p>
+
+<h2>4. Implementációs Egységek (Implementation Units) Definiálása:</h2>
+
+<p>Osztályok és Metódusok: A csomagokon belül lévő osztályok és metódusok felelnek meg a rendszer funkcionalitásának.</p>
+
+<p>Függvények és Interfészek: A csomagok közötti kapcsolatokat kialakítják a függvények és interfészek, amelyek biztosítják az információáramlást.</p>
+
+<h2>Tesztelési Egységek és Modulok:</h2>
+
+<p>Egységtesztek: Különféle egységtesztek készülnek a csomagokon belüli és közötti funkciók és kapcsolatok ellenőrzésére.</p>
+
+<p>Modulok: Az egyes csomagokat és alcsomagokat elkülönítetten tesztelik annak érdekében, hogy biztosítsák a rendszer moduláris működését.</p>
+
+<p>Az ilyen módon szervezett rendszer elősegíti a csapatok hatékonyabb együttműködését és megkönnyíti a kód karbantarthatóságát és bővíthetőségét. A csomagok egymástól elkülönülnek, és jól definiált felelősségi körökkel rendelkeznek, ami javítja a rendszer strukturális integritását.</p>
+<h2>Implementáció</h2>
+
+<h3>Nyelv és Fejlesztői Környezet Kiválasztása:</h3>
+<ul>
+  <li>Programozási nyelv kiválasztása: Java vagy C++ a játék specifikációinak megfelelően.</li>
+  <li>Fejlesztői környezet (IDE) választása: Az IDE kiválasztása a hatékony kódírás, tesztelés és hibakeresés érdekében.</li>
+</ul>
+
+<h3>Játékos Karakter Osztályok:</h3>
+<ul>
+  <li>Karakterek tulajdonságainak és képességeinek osztályokkal történő reprezentálása.</li>
+</ul>
+
+<h3>Guild Osztály:</h3>
+<ul>
+  <li>A játékosok szövetségeinek kezeléséért felelős osztályok tervezése.</li>
+</ul>
+
+<h3>PvP és Csaták Osztályok:</h3>
+<ul>
+  <li>Az osztályok elkészítése, amelyek kezelik a játékosok közötti harcokat.</li>
+</ul>
+
+<h3>Kereskedelmi Osztályok:</h3>
+<ul>
+  <li>Az osztályok implementálása a játékosok közötti kereskedelem és piaci tevékenység kezeléséért.</li>
+</ul>
+
+<h3>Osztályok közötti kapcsolatok kialakítása:</h3>
+<ul>
+  <li>Guild és Játékos Karakterek közötti kapcsolatok:
+    <ul>
+      <li>Az asszociációk és eseménykezelés tervezése, amelyek lehetővé teszik a játékosoknak a szövetségekhez való csatlakozást.</li>
+    </ul>
+  </li>
+  <li>PvP és Játékos Karakterek közötti kapcsolatok:
+    <ul>
+      <li>Az osztályok közötti kapcsolatok és eseménykezelés kidolgozása a PvP küzdelmek kezelésére.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Elemek Modulokba Szervezése:</h2>
+
+<h3>Csomagok és Névterek Definiálása:</h3>
+<ul>
+  <li>PvE (Player vs. Environment) Modul:
+    <ul>
+      <li>Küldetések, NPC-k és jellemzőik kezeléséért felelős modulok tervezése.</li>
+    </ul>
+  </li>
+  <li>Szociális Modul:
+    <ul>
+      <li>A játékosok közötti kommunikációt és kapcsolatokat kezelő modul kidolgozása.</li>
+    </ul>
+  </li>
+  <li>Piaci Modul:
+    <ul>
+      <li>A kereskedelem és piaci tevékenységekhez kapcsolódó modulok elkészítése.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3>Csomagok Struktúrájának Kidolgozása:</h3>
+
+<h4>PvE Modul:</h4>
+<ul>
+  <li>Alcsomagok: Például "Küldetések," "NPC-k," "Karakter Fejlődés."</li>
+  <li>Osztályok: Küldetéseket, NPC-ket és karakterfejlődést kezelő osztályok.</li>
+</ul>
+
+<h4>Szociális Modul:</h4>
+<ul>
+  <li>Alcsomagok: Például "Barátok," "Üzenetküldés," "Csoportok."</li>
+  <li>Osztályok: Szociális funkciókat, például barátlistát és üzenetküldést kezelő osztályok.</li>
+</ul>
+
+<h4>Piaci Modul:</h4>
+<ul>
+  <li>Alcsomagok: Például "Kereskedelem," "Piaci Statisztikák."</li>
+  <li>Osztályok: Kereskedelmi tevékenységek és piaci statisztikákért felelős osztályok.</li>
+</ul>
+
+<h3>Csomagok Közötti Kapcsolatok Kidolgozása:</h3>
+<ul>
+  <li>PvE és Szociális Modulok:
+    <ul>
+      <li>Az interfészek használata a PvE modulok és Szociális modulok közötti hatékony kommunikációhoz.</li>
+    </ul>
+  </li>
+  <li>Szociális és Piaci Modulok:
+    <ul>
+      <li>Az interfészek tervezése a szociális és piaci modulok közötti információáramlásra.</li>
+    </ul>
+  </li>
+</ul>
+<h3>Karakter és Küldetés Egységek:</h3>
+<ul>
+  <li>Azoknak az egységeknek a tesztelése, amelyek a karakterek és küldetések körül forognak.</li>
+</ul>
+
+<h3>Kereskedelmi Egységek:</h3>
+<ul>
+  <li>A kereskedelem és piaci tevékenységek tesztelése, beleértve a játékosok egymás között hatékony kereskedelmét.</li>
+</ul>
+
+<h2>Tesztelés</h2>
+
+<h3>Egységtesztek:</h3>
+<p>Egységtesztek készítése az egyes modulokhoz és osztályokhoz, beleértve a karakterek, küldetések, csaták kezelését.</p>
+
+<h3>Modultesztek:</h3>
+<p>Modultesztek létrehozása a különböző rendszerkomponensek, mint például a játéklogika, grafika és adatbázis, tesztelésére.</p>
+
+<h2>Dokumentáció</h2>
+
+<h3>Kód Dokumentáció:</h3>
+<p>A kódhoz tartozó dokumentáció készítése, például Javadoc vagy más dokumentációs formátum alkalmazása. Ennek segítségével a fejlesztők könnyen megérthetik a kódot, és dokumentáltak lesznek az osztályok, metódusok, és azok működése.</p>
+
+<h3>Felhasználói Dokumentáció:</h3>
+<p>Felhasználók számára készített dokumentáció a játék használatához. Ide tartoznak azok az útmutatók és leírások, amelyek segítik a felhasználókat a játék megértésében és hatékony használatában.</p>
+
+<h2>Tesztelési terv kidolgozása:</h2>
+
+<h3>Tesztelési Célok Meghatározása:</h3>
+<ul>
+  <li>Funkcionális Célok: Az alapvető funkciók tesztelése, például karakterek mozgatása, küldetések kezelése, csatarendszerek működése.</li>
+  <li>Teljesítmény Célok: A játék sebességének, válaszidejének és terhelhetőségének ellenőrzése.</li>
+  <li>Biztonsági Célok: Az esetleges biztonsági sebezhetőségek és adatvédelmi kérdések ellenőrzése.</li>
+</ul>
+
+<h3>Tesztesetek Kidolgozása:</h3>
+<ul>
+  <li>Alapvető Funkciók Tesztesetei: Például karakter létrehozása, mozgatása, küldetések indítása, csata kezdeményezése.</li>
+  <li>Kiterjesztett Funkciók Tesztesetei: Például speciális karakterképességek, bónuszok, különleges küldetések.</li>
+  <li>Teljesítmény Tesztesetei: A játék gyorsaságának és terhelhetőségének ellenőrzése különböző körülmények között.</li>
+  <li>Biztonsági Tesztesetei: Az adatvédelem, hitelesség és biztonsági rések tesztelése.</li>
+</ul>
+<h2>Tesztelési Környezet Kialakítása:</h2>
+
+<h3>Fejlesztői Környezet:</h3>
+<p>A fejlesztők számára környezet kialakítása a fejlesztési és egységtesztelési szakaszokban.</p>
+
+<h3>Tesztelési Környezet:</h3>
+<p>A teszteléshez külön környezet létrehozása, ahol a tesztelők minden feltételt ellenőrizhetnek.</p>
+
+<h2>Tesztelési Stratégia Kialakítása:</h2>
+
+<h3>Manuális Tesztelés:</h3>
+<p>Manuális tesztelés a felhasználói felület, a funkciók és a különféle esetek ellenőrzésére.</p>
+
+<h3>Automatizált Tesztelés:</h3>
+<p>Automatizált tesztek kialakítása, különösen a gyakran ismétlődő vagy időigényes feladatok esetében.</p>
+
+<h2>Tesztelési Esetek Prioritizálása:</h2>
+
+<h3>Kritikus Esetek:</h3>
+<p>Azok a tesztesetek, amelyek a legkritikusabb funkciókat és rendszerelemeket ellenőrzik.</p>
+
+<h3>Bővített Tesztesetek:</h3>
+<p>Azok a tesztesetek, amelyek a kiterjesztett vagy speciális funkciókat tesztelik.</p>
+
+<h2>Tesztadatok Kialakítása:</h2>
+
+<h3>Bemeneti és Kimeneti Adatok:</h3>
+<p>Tesztelési adatok elkészítése a különböző tesztesetekhez, beleértve a helyes és helytelen bemeneti adatokat.</p>
+
+<h3>Környezeti Adatok:</h3>
+<p>A tesztelési környezet megfelelő konfigurálása a különböző tesztesetekhez.</p>
+
+<h2>Tesztelési Folyamatok és Eljárások:</h2>
+
+<p>Tesztelési folyamatok kidolgozása, részletes leírások készítése a tesztelési folyamatokról, például hogyan kell elindítani egy tesztet, hogyan kell dokumentálni a hibákat.</p>
+
+<h2>Hibák Jelentése és Követése:</h2>
+
+<h3>Hibajelentési Rendszer Kialakítása:</h3>
+<p>Egy átfogó rendszer kialakítása a hibák jelentésére, rögzítésére és követésére.</p>
+
+<h2>Elfogadási Tesztek:</h2>
+
+<h3>Felhasználói Elfogadási Tesztek (UAT):</h3>
+<p>A felhasználói csapatok bevonása az elfogadási tesztek elkészítésébe és végrehajtásába.</p>
+
+<h2>Visszajelzés és Finomhangolás:</h2>
+
+<p>Tesztelési eredmények értékelése, a hibák prioritásának meghatározása.</p>
+<p>Finomhangolás: A tesztelés során talált hibák és javaslatok alapján a rend</p>
+
+<ul>
+    <li>
+        <h2>A játék felhasználói felületének tesztelése</h2>
+        <div class=WordSection1>
+            <table class=a0 border=1 cellspacing=0 cellpadding=0 width=624
+             style='margin-left:5.0pt;border-collapse:collapse;border:none'>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Tesz az.
+              1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dátum
+              2022.11.30</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Tesztelő: Nádpataki-Sass Bálint &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Verzió 4.0</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Teszt leírása</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>A játék felhasználói felülete rendesen betölt, nincsenek villódzó fények, nem odaillő objektumok.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Előfeltétel</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>A játék elindítása.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Teszt lépések</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>1. A játék indítása<br>
+              2. Offline profil elkészítése</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Paraméterek, beállítások</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>A tesztnek bármilyen
+              beállítással működnie kell.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Eredmények</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>Minden mozdulat az elvárt
+              eredmények szerint működik.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Elvárt eredmények</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>Működő gomb kombinációk,
+              nagyobb esés esetén a játékos életpontjai csökkennek.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Utó hatások</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>A játékos életpontjait
+              befolyásolják a mozgás közbeni hibák.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Megjegyzések</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>Ha a játékos alacsony életerő
+              pontokkal indul, a szoftver figyelmeztető üzenetet küld mielőtt engedélyezné
+              a parkourt, addig az azt irányító gombkombinációk tiltottak.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Teszt eredmény</b></p>
+              <div align=center>
+              <table class=a border=0 cellspacing=0 cellpadding=0 width=302
+               style='border-collapse:collapse'>
+               <tr>
+                <td width=151 style='width:113.35pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+                <p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><u><span
+                style='font-size:14.0pt'>Átment</span></u></b></p>
+                </td>
+                <td width=151 style='width:113.35pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+                <p class=MsoNormal align=center style='text-align:center;line-height:normal'>Bukott</p>
+                </td>
+               </tr>
+              </table>
+              </div>
+              <p class=MsoNormal style='line-height:normal'></p>
+              </td>
+             </tr>
+            </table>
+            </div>
+    </li>
+    <li>
+        <h2>Szintlépés tesztje:</h2>
+        <div class=WordSection1>
+            <table class=a0 border=1 cellspacing=0 cellpadding=0 width=624
+             style='margin-left:5.0pt;border-collapse:collapse;border:none'>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Tesz az.
+              2 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dátum
+              2022.11.29</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Tesztelő: Kórád György &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Verzió 4.1</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Teszt leírása</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>Ez a teszt a szintlépést vizsgálja.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Előfeltétel</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>Eljutni az első szint végére, ahol beszélgetni kell a város polgármesterével, aki egy kulcsot ad Kanye-nak, amivel a következő szintet feloldhatja.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Teszt lépések</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>Első szint teljesítése,
+                <br>
+                Kulcs átvétele,
+                <br>
+                Következő szint feloldása
+                </p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Paraméterek, beállítások</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>A tesztnek minden beállítással működnie kellene.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Eredmények</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>Sikeresen eljutunk a szint végére, ahol meglátjuk a polgármestert, viszont a beszélgetés végén nem kerül a kulcs a karakter tárgyai közé, így nem lehet továbbjutni.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Elvárt eredmények</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>A pálya végén beszélgetünk a polgármesterrel, átvesszük a kulcsot és megkezdjük a következő szintet.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Utó hatások</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>A kulcs nem szerezhető meg.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Megjegyzések</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>Szükség van a hiba mihamarabbi javítására, ez a hiba ellehetetleníti a haladást a játékban.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Teszt eredmény</b></p>
+              <div align=center>
+              <table class=a border=0 cellspacing=0 cellpadding=0 width=302
+               style='border-collapse:collapse'>
+               <tr>
+                <td width=151 style='width:113.35pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+                <p class=MsoNormal align=center style='text-align:center;line-height:normal'>Átment</p>
+                </td>
+                <td width=151 style='width:113.35pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+                <p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><u><span
+                    style='font-size:14.0pt'>Bukott</span></u></b></p>
+                </td>
+               </tr>
+              </table>
+              </div>
+              <p class=MsoNormal style='line-height:normal'></p>
+              </td>
+             </tr>
+            </table>
+            </div>
+    </li>
+    <li>
+        <h2>Szintek, képességek közötti váltások vizsgálata:</h2>
+        <div class=WordSection1>
+            <table class=a0 border=1 cellspacing=0 cellpadding=0 width=624
+             style='margin-left:5.0pt;border-collapse:collapse;border:none'>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Tesz az.
+              3 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dátum
+              2022.11.29</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Tesztelő: Drig Dávid &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Verzió 4.2</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Teszt leírása</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>A harcrendszer illetve képességek tesztelése. A játékos akkor léphet egy harcba, ha az ellenség észreveszi.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Előfeltétel</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>A játékos harchelyzetbe kerül.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Teszt lépések</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>1. lépés: A játékos megpróbál belépni a harcba.
+                <br>
+                2. lépés: Az ellenfél vagyis az ai elkezdi támadni a felhasználót.
+                <br>
+                3. lépés: A játékos a felszerelésével vagy fegyverével szembeszáll az ellenféllel.
+                <br>
+                4.lépés: Vagy a játékos veszít és meghal vagy az ellenfél.
+                <br>
+                5.lépés: Ha a 2.-ik illetve 3.-ik lépés nem sikeres, akkor teszt megbukott, egyébként sikeres.
+                </p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Paraméterek, beállítások</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>A tesztnek bármilyen beállítás esetén teljesülnie kell.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Eredmények</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>A játékos belép a harcba</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Elvárt eredmények</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>A játékos belép a harcba</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Utó hatások</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>Nincs.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Megjegyzések</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>Ha a játékos felszerelés nélkül vagy kevés élettel száll harcba az összecsapást automatikusan elveszíti.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Teszt eredmény</b></p>
+              <div align=center>
+              <table class=a border=0 cellspacing=0 cellpadding=0 width=302
+               style='border-collapse:collapse'>
+               <tr>
+                <td width=151 style='width:113.35pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+                <p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><u><span
+                style='font-size:14.0pt'>Átment</span></u></b></p>
+                </td>
+                <td width=151 style='width:113.35pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+                <p class=MsoNormal align=center style='text-align:center;line-height:normal'>Bukott</p>
+                </td>
+               </tr>
+              </table>
+              </div>
+              <p class=MsoNormal style='line-height:normal'></p>
+              </td>
+             </tr>
+            </table>
+            </div>
+    </li>
+    <li>
+        <h2>A jutalmak jóváírásának áttekintése:</h2>
+        <div class=WordSection1>
+            <table class=a0 border=1 cellspacing=0 cellpadding=0 width=624
+             style='margin-left:5.0pt;border-collapse:collapse;border:none'>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Tesz az.
+              4 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dátum
+              2022.11.29</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Tesztelő: Drig Dávid &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Verzió 4.3</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Teszt leírása</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>A videójáték pályájának tesztelése.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Előfeltétel</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>A játék betöltése illetve az egyjátékos „kampány” elindítása.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Teszt lépések</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>1.	A játék elindítása<br>
+                2.	A játék betöltését követően használhatunk gyors utazás opciót amivel tovább tesztelem a pálya betöltését.
+                <br>
+                3.	A főhősünkkel végig járjuk az utcát és megfigyeljük a mesterséges intelligencia működését.                             
+                </p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Paraméterek, beállítások</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>A játék legelején még a kampány megkezdése előtt a felhasználónak felajánl egy lehetőséget, amivel automatikusan testre szabhatja a beállításokat. Ezenkívül lehetőségünk van egy benchmark tesztre is ami megmutatja hogy hogyan futhat a játékunk.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Eredmények</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>A játékban nem töltődött be a boundary box megfelelően.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Elvárt eredmények</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>Átlátható pálya és objektumok betöltődése hibák nélkül.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Utó hatások</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>A játékban néhány helyen nem tölt be a pálya illetve a különböző objektumok.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Megjegyzések</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>Szükséges javítani a boundary boxot illetve az ezzel kapcsolatos problémákat.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Teszt eredmény</b></p>
+              <div align=center>
+              <table class=a border=0 cellspacing=0 cellpadding=0 width=302
+               style='border-collapse:collapse'>
+               <tr>
+                <td width=151 style='width:113.35pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+                <p class=MsoNormal align=center style='text-align:center;line-height:normal'>Átment</p>
+                </td>
+                <td width=151 style='width:113.35pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+                <p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><u><span
+                    style='font-size:14.0pt'>Bukott</span></u></b></p>
+                </td>
+               </tr>
+              </table>
+              </div>
+              <p class=MsoNormal style='line-height:normal'></p>
+              </td>
+             </tr>
+            </table>
+            </div>
+    </li>
+    <li>
+        <h2>A pályák, küldetések kezelésének tesztelése:</h2>
+        <div class=WordSection1>
+            <table class=a0 border=1 cellspacing=0 cellpadding=0 width=624
+             style='margin-left:5.0pt;border-collapse:collapse;border:none'>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Tesz az.
+              5 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dátum
+              2022.11.29</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Tesztelő: Nemesi Gergely Tibor &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Verzió 4.4</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Teszt leírása</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>Az alábbi teszt során az egyjátékos manuális mentési rendszerét szeretnénk megvizsgálni.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Előfeltétel</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>A játékosnak egyjátékos módban kell lennie, és nem harcmódban.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Teszt lépések</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>1.	lépés: A tesztelőnek be kell tölteni egy korábbi mentést, vagy új játékot kell kezdenie. 
+                <br>
+                2.	A tesztelőnek megkel győződni arról hogy milyen módban van (parkour, combat)
+                <br>
+                3.	A tesztelő megnyomja az F5 billentyűgombot, vagy a főmenüben megnyomja a mentés gombot.
+                </p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Paraméterek, beállítások</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>OS: Arch Linux (6.0.10-272-tkg-bmq)
+                <br>
+                CPU: AMD Ryzen 7 3700X
+                <br>
+                GPU: NVIDIA GeForce GTX 1080 
+                <br>
+                RAM: 16 GB 3200 MHz 
+                <br>
+                Gyári játék beállítások, billentyűzet és egér használata 
+                </p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Eredmények</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>Sikerült a mentés, és nem engedte meg a játék a mentést ha a játékos harcmódba került.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Elvárt eredmények</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>A mentést a játék betölti (tehát sikeres volt a mentés), és nem engedi a játékosnak hogy akkor is mentsen, amikor nem szabadna (harcmód).</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Utó hatások</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>Nincs.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Megjegyzések</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>Minden sikerült, nincs szükség semmilyen patch-re.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Teszt eredmény</b></p>
+              <div align=center>
+              <table class=a border=0 cellspacing=0 cellpadding=0 width=302
+               style='border-collapse:collapse'>
+               <tr>
+                <td width=151 style='width:113.35pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+                <p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><u><span
+                style='font-size:14.0pt'>Átment</span></u></b></p>
+                </td>
+                <td width=151 style='width:113.35pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+                <p class=MsoNormal align=center style='text-align:center;line-height:normal'>Bukott</p>
+                </td>
+               </tr>
+              </table>
+              </div>
+              <p class=MsoNormal style='line-height:normal'></p>
+              </td>
+             </tr>
+            </table>
+            </div>
+    </li>
+    <li>
+        <h2>Terhelhetőség tesztelése:</h2>
+        <div class=WordSection1>
+            <table class=a0 border=1 cellspacing=0 cellpadding=0 width=624
+             style='margin-left:5.0pt;border-collapse:collapse;border:none'>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Tesz az.
+              6 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dátum
+              2022.11.29</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Tesztelő: Nemesi Gergely Tibor &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Verzió 4.5</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Teszt leírása</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>Az alábbi teszt során a Sony és Nintendo kontrollerek giroszkópos irányítási rendszerét szeretnénk megvizsgálni.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Előfeltétel</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>A játékosnak egy Dualsense vagy Nintendo kontrollert kell használnia.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Teszt lépések</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>1.	A tesztelő bedugja az USB bemenetbe a kontrollert, vagy Bluetooth segítségével rácsatlakozik a fejlesztőállomásra.
+                <br>
+                2.	A tesztelő bekapcsolja a beállításokban a giroszkópos irányítást
+                <br>
+                3.	A tesztelő a kontrollert mozgatva megpróbálja eltalálni a mozgó ellenfelet                            
+                </p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Paraméterek, beállítások</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>OS: Arch Linux (6.0.10-272-tkg-bmq)
+                <br>
+                CPU: AMD Ryzen 7 3700X
+                <br>
+                GPU: NVIDIA GeForce GTX 1080 
+                <br>
+                RAM: 16 GB 3200 MHz 
+                <br>
+                Gyári játék beállítások, Sony Dualsense kontroller használata.
+                </p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Eredmények</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>A játék felismeri a játékos kontrollerét, azonban a giroszkóp szenzor nagyon érzékeny, és lehetetlenség eltalálni a mozgó ellenfelet.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Elvárt eredmények</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>Kontroller felismerés, optimális giroszkóp érzékenység, kényelmes irányítás.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Utó hatások</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>A játékot nem lehet végigvinni csak giroszkópos irányítással.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Megjegyzések</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>Szükség lesz egy patch-re, mert minden Playstation vagy Switch felhasználó elvárja a kényelmes giroszkópos irányítást.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Teszt eredmény</b></p>
+              <div align=center>
+              <table class=a border=0 cellspacing=0 cellpadding=0 width=302
+               style='border-collapse:collapse'>
+               <tr>
+                <td width=151 style='width:113.35pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+                <p class=MsoNormal align=center style='text-align:center;line-height:normal'>Átment</p>
+                </td>
+                <td width=151 style='width:113.35pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+                <p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><u><span
+                    style='font-size:14.0pt'>Bukott</span></u></b></p>
+                </td>
+               </tr>
+              </table>
+              </div>
+              <p class=MsoNormal style='line-height:normal'></p>
+              </td>
+             </tr>
+            </table>
+            </div>
+    </li>
+    <li>
+        <h2>Karakter mozgatás, interakciók tesztelése:</h2>
+        <div class=WordSection1>
+            <table class=a0 border=1 cellspacing=0 cellpadding=0 width=624
+             style='margin-left:5.0pt;border-collapse:collapse;border:none'>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Tesz az.
+              7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dátum
+              2022.11.29</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Tesztelő: Martinák Mátyás &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Verzió 4.6</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Teszt leírása</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>Online fiók létrehozásának tesztje. A teszt két, ugyanazon lokális hálózaton levő számítógépen zajlik, amelyek közül ez egyik a szerverszoftvert, a másik magát a játékot futtatja.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Előfeltétel</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>A teszt előfeltétele a meglévő, stabil internetkapcsolat, és hogy éppen ne legyen bejelentkezett felhasználó.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Teszt lépések</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>1.	A játék elindítása
+                <br>
+                2.	A „Settings” menün belüli „Account” menün belül a „Register” gomb megnyomása
+                <br>
+                3.	Szükséges adatok bevitele
+                <br>
+                4.	Regisztráció elküldése
+                </p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Paraméterek, beállítások</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>A két számítógép routeren keresztül csatlakozik egymáshoz, kábelesen.
+                A szerverszámítógépen nyitva van a 16520-as port.
+                A teszt build úgy lett konfigurálva, hogy a 192.168.100.101-es IP-címen csatlakozzon a szerverhez, a 16520-as porton.
+                A játéknak beállításaitól függetlenül kapcsolódnia kell a szerverhez.
+                <br>
+                <br>
+                Szerverszámítógép
+                <br>
+                •	IP-cím: 192.168.100.101
+                <br>
+                •	OS: Debian 11.1 „bullseye”
+                <br>
+                <br>
+                Kliensszámítógép
+                <br>
+                •	IP-cím: 192.168.100.102
+                <br>
+                •	OS: Windows 10 Professional 21H2
+            </p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Eredmények</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>Mind a kliensszoftver, mind a szerverszoftver az elvártak szerint működtek.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Elvárt eredmények</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>•	A szerverszámítógép adatbázisában létrejön egy új bejegyzés az éppen létrehozni próbált fiókra.
+                <br>
+                •	A kliensszámítógép pozitív visszajelzést kap a fiók létrehozásáról, majd belépteti a játékost a szerverre.
+                </p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Utó hatások</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>A játék online funkciói – például a más játékosok elleni harc – elérhetővé válnak.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Megjegyzések</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>A teszt nem veszi figyelembe, hogy létezik-e már a megadott adatokkal egyező adatokkal rendelkező felhasználói fiók, pusztán a szerver-kliens közötti kapcsolattal, és a kapott adatok feldolgozásával foglalkozik.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Teszt eredmény</b></p>
+              <div align=center>
+              <table class=a border=0 cellspacing=0 cellpadding=0 width=302
+               style='border-collapse:collapse'>
+               <tr>
+                <td width=151 style='width:113.35pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+                <p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><u><span
+                style='font-size:14.0pt'>Átment</span></u></b></p>
+                </td>
+                <td width=151 style='width:113.35pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+                <p class=MsoNormal align=center style='text-align:center;line-height:normal'>Bukott</p>
+                </td>
+               </tr>
+              </table>
+              </div>
+              <p class=MsoNormal style='line-height:normal'></p>
+              </td>
+             </tr>
+            </table>
+            </div>
+    </li>
+    <li>
+        <h2>Biztonsági sebezhetőség ellenőrzése:</h2>
+        <div class=WordSection1>
+            <table class=a0 border=1 cellspacing=0 cellpadding=0 width=624
+             style='margin-left:5.0pt;border-collapse:collapse;border:none'>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Tesz az.
+              8 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dátum
+              2022.11.29</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Tesztelő: Martinák Mátyás &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Verzió 4.7</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#F3F3F3;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Teszt leírása</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>Belépés regisztrált fiókkal. Belépési idő elfogadhatóságának ellenőrzése.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Előfeltétel</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>A felhasználónak rendelkeznie kell regisztrált fiókkal.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Teszt lépések</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>A user meglátogatja az oldalt és kitölti a személyes belépési adataival. A szerver kérelmet kap és ellenőrzi az adatbázist. A kérelem küldésétől eltelt időt és a belépés sikerességét ellenőrizzük.
+                </p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Paraméterek, beállítások</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>A belépő felhasználó adatai.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Eredmények</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>A felhasználó sikertelenül, a megadott határidőn kívül tudott belépni.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Elvárt eredmények</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>Egy megadott küszöbidőn belül mindenki be tudjon lépni a felületre, aki rendelkezik érvényes bejelentkezési adatokkal.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Utó hatások</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'>A felhasználói fiókba nem tudott belépni, csak hosszabb idő elteltével.</p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;background:#EFEFEF;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Megjegyzések</b></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'></p>
+              </td>
+             </tr>
+             <tr>
+              <td width=624 valign=top style='width:468.0pt;border:solid black 1.0pt;
+              border-top:none;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+              <p class=MsoNormal style='line-height:normal'><b>Teszt eredmény</b></p>
+              <div align=center>
+              <table class=a border=0 cellspacing=0 cellpadding=0 width=302
+               style='border-collapse:collapse'>
+               <tr>
+                <td width=151 style='width:113.35pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+                <p class=MsoNormal align=center style='text-align:center;line-height:normal'>Átment</p>
+                </td>
+                <td width=151 style='width:113.35pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+                <p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><u><span
+                    style='font-size:14.0pt'>Bukott</span></u></b></p>
+                </td>
+               </tr>
+              </table>
+              </div>
+              <p class=MsoNormal style='line-height:normal'></p>
+              </td>
+             </tr>
+            </table>
+            </div>
+    </li>
+</ul>
+</section>
+</body>

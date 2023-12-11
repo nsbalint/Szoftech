@@ -344,6 +344,8 @@ Menü: Egy egyszerű menü rendszert képzelünk el, ahol a játékos kiválaszt
 Itt tudja elindítani az új vagy a meglévő, már mentett játékot is. 
 Beállításokat elérheti, ahol tudja szabályozni a hangerőt, felbontást, felhasználói adatokat, és sok mást.
 Nem utolsó sorban itt tudja megállítani, folytatni, kilépni a játékból.
+<br><br>
+<center><img style="width: 40%;" src="beallitasok.png" ></center>
 
 <p>Karakterek: Az egyetemi élet középpontjában a hallgatók állnak és a sötét mágia által torzított szörnyekkel, illetve gonosz törvényen kívüli mágusokkal mérkőznek meg. 
 	Minden oktató és tanár különféle kihívásokkal és feladatokkal várja a diákokat. Ezeket a karakter objektumokat nem a felhasználó kezeli. 
@@ -351,12 +353,14 @@ Nem utolsó sorban itt tudja megállítani, folytatni, kilépni a játékból.
 	Bizonyos NPC-kel lehet harcolni, szembe szállni.</p>
 <p><br>
 
+    
+
 </p>
 
 <p><h4>Offline egyjátékos módok:</h4>
 	Use Case diagram: az alapvető felépítésről<br>
 </p>
-<p><center><img src="TUSreal.png" alt="Use Case Diagramm"></center></p>
+<p><center><img src="TUS.png" alt="Use Case Diagramm"></center></p>
 <p>Szereplők közül itt még csak a ’Játékos’ szerepel, és a rendszer válaszaihoz más emberi beavatkozás nem csatlakoztatható.
 	<br><li>Új játék kezdése: Ezt a funkciót alkalmazva a felhasználó saját mentési slot-ot kiválasztva, a szoftver kezdeti állapotából indulhat.</li>
 	<br><li>Játék betöltése: Akár új, akár elmentett állapotot betöltve elindul a szoftver főbb része, mely egy RPG esetén két nagyobb csoportú kezelőfelület adott kritériumoknak megfelelően váltogatja egymást.</li>
@@ -370,6 +374,410 @@ Nem utolsó sorban itt tudja megállítani, folytatni, kilépni a játékból.
 	<br><li>Beállítások: Paraméterek testreszabhatósága, karakterek alakítása, felhasznói élmények  csoportosítása. Grafika, Audio, Irányítás.</li>
 	<br><li>Kilépés: A szoftver legális bezárását ez a funkció biztosítja.</li>
 	</p>
+
+	<h2>"The Uni Saga" Crafting Rendszere:</h2>
+
+
+	<section>
+        <h2>Bevezetés</h2>
+        <p>A játékban a crafting rendszer egy kulcsfontosságú eleme a játékélménynek. Ez a rendszer lehetővé teszi a
+            játékosok számára, hogy különböző nyersanyagokat gyűjtsenek és felhasználjanak a felszereléseik fejlesztésére
+            és erősítésére. Az alábbiakban részletesen ismertetjük a rendszer működését és elemeit.</p>
+    </section>
+
+    <section>
+        <h2>Nyersanyagok</h2>
+        <ol>
+            <li><strong>Ércek és Gemek:</strong> A játék különböző pontjain található ércek és gemek fontos alapanyagok,
+                amelyeket a játékosok bányászhatnak és gyűjthetnek. Ezeket felhasználva készíthetnek erősebb fegyvereket,
+                páncélokat és egyéb tárgyakat.</li>
+            <li><strong>Varázsvirágok:</strong> A játék világában elrejtett varázsvirágok különleges tulajdonságokkal
+                rendelkeznek. Ezeket felhasználva a játékosok varázslatos tárgyakat készíthetnek, vagy meglévő
+                felszereléseiket bővíthetik ezekkel a különleges képességekkel.</li>
+            <li><strong>Rúnakövek:</strong> A rúnakövek titokzatos írásjeleket tartalmaznak, amelyek különböző
+                varázshatásokkal ruházhatják fel a tárgyakat. Ezek a kövek különleges erőforrások, amelyeket a játékosok
+                beépíthetnek a felszereléseikbe, hogy növeljék azok varázserősségét.</li>
+            <li><strong>Egyéb Nyersanyagok:</strong> A játék számos más nyersanyagot is kínál, mint például fák, bőrök,
+                szövetek stb., amelyeket különböző tárgyak és eszközök készítésére használhatnak fel a játékosok.</li>
+        </ol>
+    </section>
+
+	<center><img style="width: 40%;" src="resourcematerials.jpg" ></center>
+
+    <section>
+        <h2>Crafting Folyamat</h2>
+        <ol>
+            <li><strong>Nyersanyagok Gyűjtése:</strong> A játékosoknak először meg kell szerezniük a szükséges
+                nyersanyagokat a játék világában történő kutatással, bányászással, gyűjtögetéssel stb.</li>
+            <li><strong>Tervezés és Kiválasztás:</strong> A gyűjtött anyagok felhasználásával a játékosok tervezhetik meg
+                saját felszereléseiket, kiválasztva a kívánt tulajdonságokat és varázshatásokat.</li>
+            <li><strong>Crafting és Fejlesztés:</strong> A tervezés után a játékosok elkészíthetik a kiválasztott tárgyakat,
+                illetve meglévő felszereléseiket fejleszthetik, erősíthetik a nyersanyagok felhasználásával.</li>
+            <li><strong>Varázserősítések és Rúnák:</strong> Különleges varázserősítések és rúnák hozzáadásával a játékosok
+                tovább növelhetik felszereléseik erejét és varázsképességeit.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>A Rendszer Jelentősége</h2>
+        <ul>
+            <li><strong>Személyre Szabás:</strong> Lehetővé teszi a játékosok számára, hogy egyedi és személyre szabott
+                felszereléseket hozzanak létre.</li>
+            <li><strong>Stratégiai Elemek:</strong> A különböző anyagok és varázshatások kombinálásával a játékosok
+                különféle stratégiákat alkalmazhatnak.</li>
+            <li><strong>Felfedezés és Kihívás:</strong> A nyersanyagok keresése és a crafting folyamat ösztönzi a
+                játékosokat a játék világának felfedezésére és új kihívások megoldására.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Potionok Készítése</h2>
+        <p>A potionok (bájitalok) készítése kulcsfontosságú része a crafting rendszernek. Ezek a potionok különböző
+            varázsvirágokból főzhetők, és számos előnyt biztosítanak a játékosok számára.</p>
+
+        <ol>
+            <li><strong>Potionok Típusai:</strong></li>
+            <ul>
+                <li><strong>HP Potionok:</strong> Ezek a potionok az egészség (HP) helyreállítására szolgálnak, segítve a
+                    játékosokat a harcokban és kalandokban.</li>
+                <li><strong>Mana Potionok:</strong> A mana potionok a varázserő (mana) újratöltésére használhatók,
+                    lehetővé téve a játékosok számára, hogy tovább használják varázslataikat.</li>
+                <li><strong>Erősítő Potionok:</strong> Különböző típusú erősítő potionok állnak rendelkezésre, amelyek
+                    ideiglenesen növelik a karakterek képességeit, mint például a sebesség, erő, vagy ellenálló
+                    képesség.</li>
+            </ul>
+            <li><strong>Potionok Készítési Folyamata:</strong></li>
+            <ol>
+                <li>A játékosoknak először össze kell gyűjteniük a különböző varázsvirágokat és egyéb alapanyagokat a játék
+                    világában.</li>
+                <li>Ezt követően a gyűjtött anyagokat egy speciális főzőedényben kell összekeverniük, figyelembe véve a
+                    potionok receptjeit.</li>
+                <li>A főzési folyamat precizitást és időzítést igényel, és a játékosok kísérletezhetnek a különböző
+                    hozzávalókkal, hogy új és erősebb potionokat hozzanak létre.</li>
+            </ol>
+            <li><strong>Potionok Jelentősége:</strong></li>
+            <ul>
+                <li>A potionok kulcsfontosságúak a játékstratégia szempontjából, lehetővé téve a játékosok számára, hogy
+                    alkalmazkodjanak a különböző kihívásokhoz és helyzetekhez.</li>
+                <li>A potionok főzése és használata ösztönzi a kreativitást és a tervezést, miközben új lehetőségeket kínál
+                    a karakterek fejlődéséhez és a játékélmény gazdagításához.</li>
+				<li>A potionok készítése tehát egy izgalmas és stratégiai aspektusa a "The Uni Saga" játék crafting rendszerének, amely tovább bővíti a játékbeli lehetőségeket és mélységet.</li>
+            </ul>
+        </ol>
+    </section>
+
+	<h2>Pálcák</h2>
+
+	<section>
+        <p>A "The Uni Saga" játékban a varázspálcák nem csak eszközök a varázslatok végrehajtásához, hanem fontos
+            stratégiai elemek is, amelyek befolyásolják a karakterek mágikus képességeit. Különböző típusú varázspálcák
+            állnak rendelkezésre, amelyek különböző mágia specializációkhoz igazodnak.</p>
+    </section>
+
+    <center><img style="width: 40%""; src="palcak.jpg" alt="Különböző pálcák"></center>
+
+    <section>
+        <h2>Pálcák Típusai és Specializációk</h2>
+        <ol>
+            <li>
+                <h3>Elementális Pálcák:</h3>
+                <ul>
+                    <li><strong>Tűz:</strong> Ezek a pálcák extra sebzést biztosítanak a tűzvarázslatokhoz, de csökkentik
+                        a többi elemi mágia hatékonyságát.</li>
+                    <li><strong>Föld:</strong> A föld specializációjú pálcák erősítik a földvarázslatokat, de kevésbé hatékonyak
+                        más elemekkel.</li>
+                    <li><strong>Szél:</strong> A szél specializációjú pálcák a szélvarázslatokat erősítik, ám gyengítik a többi
+                        elem hatását.</li>
+                    <li><strong>Villám:</strong> Villám specializációjú pálcák a villámvarázslatokkal működnek a legjobban, de
+                        más elemekkel kevésbé hatásosak.</li>
+                    <li><strong>Víz:</strong> A víz specializációjú pálcák a vízvarázslatokat erősítik, de csökkentik a többi
+                        elem hatékonyságát.</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Univerzális Pálca:</h3>
+                <p>Ez a típusú pálca mindenféle elemi mágia használatát lehetővé teszi anélkül, hogy bónuszt vagy büntetést
+                    biztosítana egy adott elemre. Ez ideális választás lehet azok számára, akik sokoldalúságot és adaptációt
+                    részesítenek előnyben.</p>
+            </li>
+            <li>
+                <h3>Varázslatok:</h3>
+                <p>Minden pálcához különböző varázslatok társulnak, amelyek a pálca specializációjától függően változhatnak.
+                    Például egy tűz specializációjú pálca lehetővé teszi a játékosok számára erőteljes tűzvarázslatok
+                    használatát.</p>
+            </li>
+        </ol>
+    </section>
+
+    <center><img style="width: 40%""; src="spellek.jpg" alt="Varázslatok"></center>
+
+    <section>
+        <h2>Pálcák Hatásai és Stratégia</h2>
+        <p>A pálcák kiválasztása nagymértékben befolyásolja a játékosok mágikus stratégiáját és harci stílusát. Egyes
+            játékosok előnyben részesíthetik az egy elemre specializált pálcákat a nagyobb sebzés érdekében, míg mások az
+            univerzális pálcát választhatják a nagyobb rugalmasság miatt.</p>
+    </section>
+	<h2>Enchantolás</h2>
+	<section>
+        <p>A "The Uni Saga" játékban az enchantolás egy fontos mechanizmus, amely lehetővé teszi a játékosok
+            számára, hogy felszereléseiket különleges képességekkel ruházzák fel. Az enchantolás révén a karakterek
+            ellenállóbbá válnak bizonyos mágiatípusokkal szemben, vagy más előnyöket szerezhetnek a játék során.</p>
+    </section>
+
+    <section>
+        <h2>Enchantolás Folyamata és Típusai</h2>
+        <ol>
+            <li>
+                <h3>Mágiatípusokra Való Ellenállás:</h3>
+                <ul>
+                    <li><strong>Specifikus Mágiatípusok:</strong> A felszerelések enchantolhatók úgy, hogy ellenállást
+                        nyújtanak egy adott mágiatípussal (pl. tűz, víz, szél, stb.) szemben. Ez lehetővé teszi a
+                        karakterek számára, hogy hatékonyabban védekezzenek bizonyos varázslatok ellen.</li>
+                    <li><strong>Átfogó Védelem:</strong> Egyes enchantok átfogó védelmet biztosítanak mindenféle mágiatípus
+                        ellen, ám ezek általában kisebb mértékű védelmet nyújtanak, mint a specifikus enchantok.</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Fizikai Védelem:</h3>
+                <p>A felszerelések enchantolhatók úgy is, hogy növeljék a karakter fizikai ellenállását, csökkentve ezzel a
+                    fizikai sérülések mértékét.</p>
+            </li>
+            <li>
+                <h3>Gyorsaság és Mozgékonyság:</h3>
+                <p>Egyes enchantok növelik a karakter mozgási sebességét vagy agilitását, lehetővé téve gyorsabb mozgást
+                    és manőverezést a csatatéren.</p>
+            </li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Enchantolás Jelentősége</h2>
+        <ul>
+            <li><strong>Személyre Szabott Játékstílus:</strong> A különböző enchantok lehetővé teszik a játékosok számára,
+                hogy a karaktereiket a saját játékstílusukhoz igazítsák.</li>
+            <li><strong>Stratégiai Előnyök:</strong> Az enchantok megfelelő használatával a játékosok stratégiai előnyöket
+                szerezhetnek, legyen szó védelemről vagy támadásról.</li>
+            <li><strong>Kihívásokra Való Felkészülés:</strong> Az enchantolás segítségével a játékosok jobban
+                felkészülhetnek a különböző kihívásokra és ellenfelekre a játék során.</li>
+        </ul>
+    </section>
+
+	<section>
+        <h2>Ellenséges Lények és Alosztályaik</h2>
+        <h3>Alaptípusok:</h3>
+        <ol>
+            <li>Goblinok: Fagyos Goblin, Mocsári Goblin, Barlangi Goblin, Sötét Erdei Goblin</li>
+            <li>Orcok: Fagyos Orc, Mocsári Orc, Barlangi Orc, Sötét Erdei Orc</li>
+            <li>Troll: Fagyos Troll, Mocsári Troll, Barlangi Troll, Sötét Erdei Troll</li>
+            <li>Szellemlények: Fagyos Szellemlény, Mocsári Szellemlény, Barlangi Szellemlény, Sötét Erdei Szellemlény</li>
+            <li>Druidák: Fagyos Druida, Mocsári Druida, Barlangi Druida, Sötét Erdei Druida</li>
+        </ol>
+        <h2>Sárkányok:</h2>
+    <p><strong>Tűzsárkány:</strong> Egy erős és félelmetes ellenség, amely tűzvarázslatokat használ és képes tűzgömböket lövellni. Speciális páncélzata van, amely ellenáll a legtöbb támadásnak.</p>
+    <p><strong>Jégsárkány:</strong> Egy ritka sárkányfaj, amely jéggel kapcsolatos varázslatokkal támad, és képes megfagyasztani az ellenségeit. Különleges képessége, hogy ideiglenesen láthatatlanná válhat.</p>
+
+    <h2>Griffek:</h2>
+    <p><strong>Arany Griff:</strong> Gyors és agilis lény, amely magasból támadja meg az ellenségeit. Képes hatalmas sebzést okozni karmaival és csőrével.</p>
+    <p><strong>Éjszárny Griff:</strong> Egy sötét színű griff, amely éjszaka aktív. Speciális képessége az, hogy hirtelen támadásokat indítson a sötétségből, meglepetés elemmel.</p>
+
+    <h2>Óriások:</h2>
+    <p><strong>Sziklaóriás:</strong> Egy masszív termetű óriás, amely hatalmas erejével és sziklákkal támad. Képes nagy távolságokra hajítani nagy sziklákat.</p>
+    <p><strong>Fagyóriás:</strong> Egy hatalmas óriás, aki a jeges tájakon él. Jéggel kapcsolatos támadásai vannak, és képes hatalmas területen fagyást okozni.</p>
+
+    <h2>Mágikus Lény:</h2>
+    <p><strong>Árnyékjáró:</strong> Egy misztikus lény, amely az árnyékokban rejtőzik és hirtelen támadásokkal lepi meg áldozatait.</p>
+
+    <h2>Mitikus Bestiák:</h2>
+    <p><strong>Főnix:</strong> Egy tűzvarázslatokra specializálódott legendás madár, amely képes feltámadni a hamvaiból.</p>
+    <p><strong>Hidra:</strong> Egy többfejű szörny, amely minden levágott fej helyett kettőt növeszt. Speciális képessége az, hogy minden feje más típusú támadást indítson.</p>
+
+    <p>Ezek a mítikus ellenségek ritka és értékes tárgyakat dobnak, amikor legyőzik őket, és egyedülálló kihívást jelentenek a játékosok számára. A legyőzésük nemcsak hatalmas dicsőséget, hanem különleges jutalmakat is hoz, mint például egyedi fegyverek, páncélok, vagy varázstárgyak.</p>
+		<p><center><img style="width: 40%;" src="basic.jpg" alt="Basic Goblin"></center></p>
+		<center><h3>Basic goblin ellenfél</h3></center>
+		<p><center><img style="width: 40%;" src="epic.jpg" alt="Epic Goblin"></center></p>
+		<center><h3>Epic goblin ellenfél</h3></center>
+		<p><center><img style="width: 40%;" src="legendary.jpg" alt="Legendary Goblin"></center></p>
+		<center><h3>Legendary goblin ellenfél</h3></center>
+
+        <p>Alosztályaik a térképi hovatartozásuk alapján változik:
+            <ul>
+                <li><strong>Fagyos:</strong> északi területeken és havas tájakon találhatóak</li>
+                <li><strong>Mocsári:</strong> nyugati területeken a mocsarakban</li>
+                <li><strong>Sötét Erdei:</strong> keleti és déli területeken</li>
+                <li><strong>Barlang:</strong> az egész térkép barlangrendszerében találhatóak</li>
+            </ul>
+        </p>
+    </section>
+
+    <section>
+        <h3>Ellenséges Csoportok Különleges Hatásai:</h3>
+        <h4>Fagyos Ellenségek Hatásai</h4>
+        <ul>
+            <li><strong>Lassítás:</strong> A Fagyos ellenségek támadásai lassítási effektust okoznak, ami csökkenti a
+                karakter sebességét és reakcióidejét.</li>
+            <li><strong>Ellenállóság Csökkenés:</strong> Csökkentik a karakter ellenállóságát a hideggel szemben, növelve
+                ezzel a jövőbeli fagyos támadások sebzését.</li>
+        </ul>
+        <h4>Mocsári Ellenségek Hatásai</h4>
+        <ul>
+            <li><strong>Mérgezés:</strong> A Mocsári ellenségek támadásai mérgezés effektust okoznak, ami idővel sebzi a
+                karaktert.</li>
+            <li><strong>Gyógyító Italok Hatékonyságának Csökkenése:</strong> A mérgezés hatására a gyógyító italok
+                kevésbé hatékonyak, 30%-kal kevesebbet töltve vissza az egészséget.</li>
+        </ul>
+        <h4>Sötét Erdei Ellenségek Hatásai</h4>
+        <ul>
+            <li><strong>Energia Elvonás:</strong> A Sötét Erdei ellenségek támadásai energiát vonnak el, ami csökkenti a
+                mana vagy a speciális képességek használati gyakoriságát.</li>
+            <li><strong>Látótér Csökkentése:</strong> Ideiglenesen csökkenthetik a karakter látóterét, ami megnehezíti az
+                ellenségek észlelését és a támadások kivédését.</li>
+        </ul>
+        <h4>Barlangi Ellenségek Hatásai</h4>
+        <ul>
+            <li><strong>Orientációs Zavar:</strong> A Barlangi ellenségek támadásai zavart okoznak, ami ideiglenesen
+                megnehezíti a térkép és a környezet megértését.</li>
+            <li><strong>Félelem Effektus:</strong> Ideiglenes félelem effektust okoznak, ami csökkenti a karakter
+                támadóképességét és védekezési hatékonyságát.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Nehézségi Szintek</h3>
+        <p>Minden ellenségtípusnak három nehézségi szintje van: Alap, Elit, Legendás</p>
+        <ul>
+            <li><strong>Alap Szint (pl. Fagyos Goblin):</strong> Nem jár semmilyen behatással.</li>
+            <li><strong>Elit Szint (pl. Elit Fagyos Goblin):</strong> Erősebb, több HP-val, páncéllal és sebzéssel.</li>
+            <li><strong>Legendás Szint (pl. Legendás Fagyos Goblin):</strong> A legmagasabb szint, mely jelentősen több XP-t,
+                aranyat és lootot ad, valamint rendkívül erős HP-vel, páncéllal és sebzéssel rendelkezik.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Jutalmak és Kihívások</h3>
+        <p>A magasabb szintű ellenségek legyőzése nagyobb kihívást jelent, de egyúttal jobb jutalmakat is kínál.</p>
+        <ul>
+            <li>Minél magasabb a szint, annál több tapasztalati pontot (XP), aranyat és értékes tárgyakat (loot) dobnak az
+                ellenségek.</li>
+            <li>A különböző környezeti specializációk új stratégiákat és megközelítéseket követelnek meg a játékosoktól.
+            </li>
+        </ul>
+    </section>
+
+
+	<h1>A térkép</h1><br><br>
+	<center><img style="width: 70%;" src="map.jpg"></center>
+
+	<section>
+        <h2>Térképi Régiók és Ellenséges Alosztályok</h2>
+        <h3>1. Fagyos Régiók (Északi és Havas Területek):</h3>
+        <p>Itt találhatóak a Fagyos ellenségek. A hóval borított tájak és jeges környezet különleges kihívásokat és
+            akadályokat jelentenek a játékosok számára.</p>
+        <h3>2. Mocsári Régiók (Nyugati Területek):</h3>
+        <p>A Mocsári ellenségek. A sűrű mocsarak és lápok rejtélyes és veszélyes területet biztosítanak, ahol könnyen
+            eltévedhetnek a játékosok.</p>
+        <h3>3. Sötét Erdős Régiók (Keleti és Déli Területek):</h3>
+        <p>A Sötét Erdei ellenségek. Az árnyas erdők és sűrű bozótosok rejtelmes atmoszférát teremtenek, ahol az
+            ellenségek meglepetésszerűen támadhatnak.</p>
+        <h3>4. Barlangi Régiók (Az Egész Térkép Barlangrendszereiben):</h3>
+        <p>A Barlangi ellenségek az egész térkép alatti barlangrendszerben megtalálhatóak. A sötét és labirintusszerű
+            barlangok különleges kihívást jelentenek, ahol a játékosoknak vigyázniuk kell az összeomlásokra és más
+            veszélyekre.</p>
+    </section>
+
+    <section>
+        <h2>A Régiók Jelentősége</h2>
+        <p>Minden régió egyedi kihívásokkal és lehetőségekkel bír, amelyek befolyásolják a játékstratégiát és a felfedezés
+            módját.</p>
+        <p>A különböző régiókban élő ellenségek különböző taktikákat és felszereléseket igényelnek a legyőzésükhöz.</p>
+        <p>A játékosoknak alkalmazkodniuk kell a különböző környezetekhez, hogy sikeresen legyőzzék az ellenségeket és
+            felfedezzék a játék világának titkait.</p>
+    </section><br><br>
+
+	<h2>Objektumok</h2>
+	<section>
+
+        <p>A játékban a tereptárgyak és a környezet interaktív szerepet játszanak, amelyek befolyásolják a játékmenetet és a
+            stratégiákat. A játékosok varázslatai és az ellenségek cselekedetei változásokat hozhatnak létre a környezetben,
+            amelyek hatással lehetnek a játék dinamikájára.</p>
+    </section>
+
+    <section>
+        <h2>Környezeti Interakciók</h2>
+        <h3>1. Varázslatok és Környezeti Hatások:</h3>
+        <ul>
+            <li><strong>Tűzvarázslatok:</strong> A tűzvarázslatok képesek felégetni a növényzetet, tárgyakat és akár falakat
+                is, megváltoztatva ezzel a terep szerkezetét.</li>
+            <li><strong>Vízvarázslatok:</strong> Ezekkel az áradásokat idézhetnek elő, ami új útvonalakat hozhat létre vagy
+                akadályozhatja az ellenségek mozgását.</li>
+            <li><strong>Földvarázslatok:</strong> A földvarázslatok képesek falakat és akadályokat emelni, ami védelmet nyújthat
+                vagy új utakat nyithat meg.</li>
+            <li><strong>Szélvarázslatok:</strong> Ezekkel erős széllökéseket generálhatnak, ami képes eltávolítani vagy elmozdítani
+                kisebb tárgyakat és akadályokat.</li>
+        </ul>
+
+        <h3>2. Ellenségek és a Környezet:</h3>
+        <ul>
+            <li>Nagyobb ellenségek, mint például az orkok vagy trollok, képesek falakat és fákat ledönteni, megváltoztatva
+                ezzel a harci területet.</li>
+            <li>Néhány speciális ellenség képes a környezetet a saját előnyére használni, például rejtőzködésre vagy csapdák
+                állítására.</li>
+        </ul>
+
+        <h3>3. Dinamikus Környezeti Elemek:</h3>
+        <ul>
+            <li><strong>Függőhidak és Átjárók:</strong> Ezek a struktúrák sérülékenyek lehetnek és összeomolhatnak a harc
+                során.</li>
+            <li><strong>Rejtett Kamrák és Titkos Ajtók:</strong> A környezetben felfedezhető titkos helyek extra erőforrásokat
+                vagy rövidebb utakat kínálhatnak.</li>
+            <li><strong>Interaktív Tárgyak:</strong> Például vázák, ládák, amelyeket fel lehet használni vagy össze lehet
+                törni további erőforrásokért.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Stratégiai Jelentőség</h2>
+        <p>A környezet és a tereptárgyak stratégiai szempontból fontosak, mivel lehetőséget adnak a játékosoknak a kreatív
+            megközelítésekre és a változatos taktikákra.</p>
+        <p>A környezet megváltoztatása új lehetőségeket teremthet a harcban vagy a küldetések során, és befolyásolhatja a
+            harc kimenetelét.</p>
+    </section>
+
+	<section>
+        <h2>Felfedező Küldetések</h2>
+        <p><strong>Régi Legendák Nyomában:</strong> A játékosnak egy ősi szöveg alapján kell felfedeznie egy elfeledett templomot,
+            amely tele van rejtélyekkel és veszélyekkel.</p>
+
+        <p><strong>Az Elveszett Artefaktum:</strong> Egy értékes, rég elveszett mágikus tárgyat kell megtalálni és visszahozni
+            egy bizonyos helyről, mint például egy sötét erdő mélyéről vagy egy veszélyes barlangból.</p>
+    </section>
+
+    <section>
+        <h2>Harci Küldetések</h2>
+        <p><strong>Ellenséges Táborok Megsemmisítése:</strong> A játékos feladata ellenséges táborok felszámolása egy adott területen,
+            beleértve a vezetők és kulcsfigurák legyőzését.</p>
+
+        <p><strong>A Nagy Őr Megölése:</strong> Egy különösen erős ellenség, mint egy Legendás Goblin vagy Orc megölése, aki komoly
+            fenyegetést jelent a környező területekre.</p>
+    </section>
+
+	<h1>Küldetésfajták</h1>
+
+    <section>
+        <h2>Gyűjtő Küldetések</h2>
+        <p><strong>Ritka Növények Gyűjtése:</strong> Különleges varázsvirágok vagy gyógynövények gyűjtése egy távoli területről,
+            amelyeket gyógyító italok vagy varázstárgyak készítéséhez lehet felhasználni.</p>
+
+        <p><strong>Nyersanyagok Beszerzése:</strong> Fontos nyersanyagok, mint például ércek vagy különleges fémek beszerzése a
+            crafting rendszerhez.</p>
+    </section>
+
+    <section>
+        <h2>Mentő Küldetések</h2>
+        <p><strong>Foglyok Megmentése:</strong> Elrabolt lakosok vagy más karakterek megmentése ellenséges területekről.</p>
+
+        <p><strong>Veszélyes Terület Tisztítása:</strong> Egy adott terület megtisztítása az ellenséges lényektől, hogy biztonságosabbá
+            váljon a környék.</p>
+    </section>
 
 <p><br>
 </p>
@@ -388,6 +796,457 @@ Nem utolsó sorban itt tudja megállítani, folytatni, kilépni a játékból.
 	<br><li>Tereptárgyak, checkpontok betöltése: Ahogyan a pályabetöltési folyamat részeként, először az összes szükséges tereptárgyat és checkpoint-ot be kell olvasni a játékba. Ezek tartalmazhatnak 3D modelleket, textúrákat, animációkat, hangokat és egyéb adatokat.</li>
 </ul><br>
 
+<h2>Karok</h2>
+
+<h2>Bájitalmester Kar (Potionmaster Guild)</h2>
+
+<h3>Fő Szerepe:</h3>
+<p>A Bájitalmester Kar tagjai mesterei a bájitalok készítésének. Képességeik közé tartozik az egészség, mana, vagy erő növelésére, illetve az ellenségek gyengítésére szolgáló italok előállítása.</p>
+
+<h3>Speciális Képességek:</h3>
+<p>Ezek a karakterek különféle ritka összetevőket gyűjthetnek a játék világából, amelyekből különleges és hatékony bájitalokat készíthetnek.</p>
+
+<h3>Játékstílus:</h3>
+<p>A Bájitalmester Kaszt tagjai inkább a háttérből támogatják a csapatot, gyógyító és erősítő italokkal. A csatákban stratégiai előnyhöz juthatnak az általuk készített bájitalokkal.</p>
+
+<h2>Pajzsmágus Kar (Shieldmage Guild)</h2>
+
+<h3>Fő Szerepe:</h3>
+<p>A Pajzsmágusok a védekezés mesterei. Képesek erős védelmi varázslatokat alkalmazni, melyekkel megvédik magukat és társaikat.</p>
+
+<h3>Speciális Képességek:</h3>
+<p>E kaszt tagjai nagyobb ellenálló képességgel rendelkeznek, és képesek pajzsokat, védőtereket létrehozni.</p>
+
+<h3>Játékstílus:</h3>
+<p>A Pajzsmágusok a csapat védelmezői. Csatákban fontos szerepük van az ellenséges támadások elhárításában és csapattársaik védelmében.</p>
+
+<h2>Harmónia Kar (Harmony Guild)</h2>
+
+<h3>Fő Szerepe:</h3>
+<p>A Harmónia Kar tagjai kiemelkedő sebzést képesek okozni. Specializációjuk lehet fizikai vagy mágikus jellegű.</p>
+
+<h3>Speciális Képességek:</h3>
+<p>Erős támadó varázslatokkal és kombókkal rendelkeznek, amelyekkel nagy károkat okozhatnak rövid idő alatt.</p>
+
+<h3>Játékstílus:</h3>
+<p>Agilis és gyors támadás jellemzi őket. A Harmónia Kar tagjai ideálisak az ellenséges vonalak gyors lebontására és az erős ellenfelek gyors legyőzésére.</p>
+
+<h2>Passzív Mágus Kar (Passive Mage Guild)</h2>
+
+<h3>Fő Szerepe:</h3>
+<p>A Passzív Mágusok az összetett, támogató varázslatok mesterei. Képességeik közé tartozik a csapat támadó és védelmi képességeinek növelése, valamint ellenséges képességek blokkolása vagy gyengítése.</p>
+
+<h3>Speciális Képességek:</h3>
+<p>Kontrolláló és támogató varázslatokban utaznak, képesek manipulálni a csatatér dinamikáját és befolyásolni a harc menetét.</p>
+
+<h3>Játékstílus:</h3>
+<p>A Passzív Mágusok a háttérből irányítják a csatatér eseményeit, taktikai előnyöket biztosítva csapatuk számára.</p>
+
+<h1>The UNI Saga - Kasztok és Képességfák</h1>
+<p>Minden kaszt egyedi és személyre szabott játékélményt kínál, lehetővé téve a játékosok számára, hogy saját stílusuknak megfelelően játszhassanak és fejlődhessenek a "The UNI Saga" világában. Ezek a kasztok nemcsak különféle játékstílusokat kínálnak, hanem lehetővé teszik a játékosok számára, hogy stratégiai szinten gondolkodjanak, miközben együttműködnek és versenyeznek a játék különböző kihívásaival.</p>
+
+<!-- Képességfák és Specializációk -->
+<h2>Képességfák és Specializációk</h2>
+
+<!-- Bájitalmester Kar -->
+<h3>Bájitalmester Kar (Potionmaster Guild)</h3>
+<p>Minden kaszthoz tartozó képességfa és szakértői rendszer lehetővé tenné a játékosok számára, hogy a karakterüket egyedi módon fejlesszék és specializálják. Itt van néhány ötlet a képességfákhoz és a specializációkhoz a Bájitalmester Kar számára:</p>
+
+<h4>Képességfa:</h4>
+<ul>
+  <li>Gyógyító Bájitalok: Speciális bájitalok, amelyek gyors gyógyulást és hosszú távú egészség-regenerációt biztosítanak.</li>
+  <li>Erősítő Bájitalok: Bájitalok, amelyek ideiglenesen növelik a támadó és védelmi képességeket.</li>
+  <li>Mérgező Bájitalok: Olyan bájitalok, amelyek ellenségeket mérgeznek vagy gyengítik.</li>
+</ul>
+
+<h4>Specializációk:</h4>
+<ul>
+  <li>Mester Bájitalkészítő: Speciális képességek a ritka és erőteljes bájitalok készítéséhez.</li>
+  <li>Mérgező: Fokozott hatékonyságú mérgező bájitalok készítése.</li>
+</ul>
+
+<h3>Bájitalmester Kar (Potionmaster Guild)</h3>
+<p><strong>Képességfa:</strong></p>
+<ul>
+  <li><em>Gyógyító Bájitalok:</em> Speciális bájitalok, amelyek gyors gyógyulást és hosszú távú egészség-regenerációt biztosítanak.</li>
+  <li><em>Erősítő Bájitalok:</em> Bájitalok, amelyek ideiglenesen növelik a támadó és védelmi képességeket.</li>
+  <li><em>Mérgező Bájitalok:</em> Olyan bájitalok, amelyek ellenségeket mérgeznek vagy gyengítik.</li>
+</ul>
+
+<p><strong>Specializációk:</strong></p>
+<ul>
+  <li><em>Mester Bájitalkészítő:</em> Speciális képességek a ritka és erőteljes bájitalok készítéséhez.</li>
+  <li><em>Mérgező:</em> Fokozott hatékonyságú mérgező bájitalok készítése.</li>
+</ul>
+
+<!-- Pajzsmágus Kar -->
+<h3>Pajzsmágus Kar (Shieldmage Guild)</h3>
+<p><strong>Képességfa:</strong></p>
+<ul>
+  <li><em>Erős Pajzsok:</em> Erősebb védelmi varázslatok, amelyek nagyobb ellenállást biztosítanak.</li>
+  <li><em>Varázsreflektálás:</em> Képesség arra, hogy visszaverje az ellenfél varázslatait.</li>
+  <li><em>Területi Védelem:</em> Nagy területen védelmet biztosító varázslatok.</li>
+</ul>
+
+<p><strong>Specializációk:</strong></p>
+<ul>
+  <li><em>Védelmi Mágus:</em> Kiemelkedő védelmi varázslatok és ellenálló képességek.</li>
+  <li><em>Varázslatblokkoló:</em> Speciális képességek az ellenséges varázslatok blokkolására és semlegesítésére.</li>
+</ul>
+
+<!-- Harmónia Kar -->
+<h3>Harmónia Kar (Harmony Guild)</h3>
+<p><strong>Képességfa:</strong></p>
+<ul>
+  <li><em>Gyors Támadások:</em> Gyors és hatékony támadási kombók.</li>
+  <li><em>Elemi Támadások:</em> Tűz, jég, villám stb. elemi varázslatok.</li>
+  <li><em>Kritikus Támadások:</em> Nagyobb esély a kritikus sebzésre.</li>
+</ul>
+
+<p><strong>Specializációk:</strong></p>
+<ul>
+  <li><em>Elemi Harcos:</em> Specializálódás az elemi varázslatokban.</li>
+  <li><em>Duelista:</em> Kiemelkedő képességek a gyors és pontos támadásokban.</li>
+</ul>
+
+<h3>Passzív Mágus Kar (Passive Mage Guild)</h3>
+<p><strong>Képességfa:</strong></p>
+<ul>
+  <li><em>Támogató Varázslatok:</em> Csapattársak erősítése és gyógyítása.</li>
+  <li><em>Ellenség Gyengítése:</em> Ellenségek képességeinek csökkentése.</li>
+  <li><em>Stratégiai Kontroll:</em> A csatatér kontrollálása és manipulálása.</li>
+</ul>
+
+<p><strong>Specializációk:</strong></p>
+<ul>
+  <li><em>Taktikus Varázsló:</em> Képességek a csatatér és a harc dinamikájának befolyásolására.</li>
+  <li><em>Védelmező Mágus:</em> Kiemelt képességek a csapattársak védelmében és támogatásában.</li>
+</ul>
+
+<p>Minden kaszt képességfája és specializációs útvonala lehetővé teszi a játékosok számára, hogy a saját stílusuknak és stratégiáiknak megfelelően alakítsák a karakterüket.</p>
+
+<h3>Az Elvarázsolt Erdő Titka</h3>
+<p><strong>Leírás:</strong> Egy titokzatos erő hatására egy erdő élőlényei agresszívvá váltak. A játékosok feladata a forrás felfedezése és a béke helyreállítása.</p>
+<p><strong>Cél:</strong> Harcolni az erdő élőlényeivel, megtalálni az elvarázsolás okát, és semlegesíteni a fenyegetést.</p>
+
+<!-- A Széttört Kristály Rejtélye -->
+<h3>A Széttört Kristály Rejtélye</h3>
+<p><strong>Leírás:</strong> Egy ősi kristály széttört, darabjait pedig a világ különböző részein rejtették el. A játékosoknak össze kell gyűjteniük a darabokat, hogy helyreállítsák a kristályt.</p>
+<p><strong>Cél:</strong> Gyűjteni a kristálydarabokat különböző helyszíneken keresztül, amelyek mindegyike saját kihívásokkal és rejtvényekkel rendelkezik.</p>
+
+<!-- Az Elfeledett Mágus Tornya -->
+<h3>Az Elfeledett Mágus Tornya</h3>
+<p><strong>Leírás:</strong> Egy híres, de régóta eltűnt mágus tornyára bukkannak a játékosok, tele veszélyes csapdákkal és őrzőkkel.</p>
+<p><strong>Cél:</strong> A torony megmászása, csapdák és ellenfelek legyőzése, valamint a torony tetején rejlő titok felfedezése.</p>
+
+<!-- A Titkos Alagútrendszer -->
+<h3>A Titkos Alagútrendszer</h3>
+<p><strong>Leírás:</strong> A játékosok egy rejtélyes alagútrendszert fedeznek fel, amelyet titkos társaságok és gonosz lények használnak.</p>
+<p><strong>Cél:</strong> Navigálni az alagutakban, harcolni az ellenséges csoportokkal és megtalálni a titkos társaságok által rejtett kincseket és információkat.</p>
+
+<p><br>
+<br>
+<h2>Dinamikus események és Világ</h2>
+<p>A játékban a dinamikus események és világ eleme kiemelkedően fontos szerepet játszik az élményben. A játékot egy élő, változó világ jellemzi, ahol az időjárás és az évszakok változásai közvetlenül befolyásolják a játékmenetet és a környezetet. Ez a dinamika új szintre emeli a játékosok immerszióját és interakcióját a virtuális világgal.</p>
+
+<h3>Időjárás Változások</h3>
+<ul>
+  <li>A világban az időjárás változásai nem csak vizuális elemek, hanem befolyásolják a karakterek képességeit, a küldetések végrehajtását és az ellenségek viselkedését.</li>
+  <li>Például egy hirtelen jött esőzés vagy vihar megnehezítheti a látást, csökkentheti a sebességet, vagy akár új útvonalakat és rejtett területeket is felfedezhetővé tehet a játékban.</li>
+</ul>
+
+
+<h3>Évszakok Váltakozása</h3>
+<ul>
+  <li>A játékban az évszakok változása nemcsak vizuális szépséget kölcsönöz, hanem új lehetőségeket és kihívásokat is hoz a játékmenetbe.</li>
+  <li>Például a tél beköszöntével a tájakat hó borítja be, ami új akadályokkal és kihívásokkal szembesíti a játékosokat, mint például a csúszós utak vagy a hó alatt rejtőző veszélyek.</li>
+</ul>
+
+<h3>Speciális Események</h3>
+<ul>
+  <li>Az év során különleges események színesítik a játékot, mint például ünnepek, fesztiválok vagy ritka asztronómiai események, amelyek különleges küldetéseket és jutalmakat hoznak.</li>
+  <li>Ezek az események lehetőséget adnak a játékosoknak, hogy különleges tárgyakhoz jussanak, új karakterekkel találkozzanak, vagy egyedi küldetéseket teljesítsenek.</li>
+</p>
+
+<h2>A Világ Élővé Válása</h2>
+<p>A dinamikus események és változások révén a "The UNI Saga" világa élőnek és változatosnak érződik. A játékosok minden bejelentkezéskor új elemekkel és meglepetésekkel találkozhatnak, ami fokozza az élményt és elősegíti a felfedezés örömét.</p>
+<p>Ez a dinamika segít abban is, hogy a játékosok egy mélyebb kapcsolatot alakítsanak ki a játék világával, hiszen a változásokra való reagálásuk hatással van a játékmenetükre és döntéseikre.</p>
+
+<p>Ez a dinamikus világ és az események rendszere biztosítja, hogy a "The UNI Saga" mindig új és izgalmas maradjon a játékosok számára, folyamatosan új tartalmakkal és kihívásokkal gazdagítva az élményt.</p>
+
+<!-- Kereskedelmi rendszer -->
+<h2>Kereskedelmi Rendszer</h2>
+
+<p>A játék egyik legfontosabb és leginnovatívabb eleme a kiterjedt kereskedelmi rendszer, amely új dimenziót ad a játékélményhez és a játékosok közötti interakcióhoz. Ez a rendszer lehetővé teszi a játékosok számára, hogy egymás között kereskedjenek, eladjanak, vagy cseréljenek tárgyakat, felszereléseket és nyersanyagokat. A rendszer részletei a következőképpen alakulnak:</p>
+
+<!-- Interaktív Piaci Területek -->
+<h3>Interaktív Piaci Területek</h3>
+<ul>
+  <li>A játék világában különböző piaci területeket hozunk létre, ahol a játékosok találkozhatnak, tárgyalhatnak és kereskedhetnek.</li>
+  <li>Ezek a piacterek nem csak virtuális üzletek, hanem társadalmi találkozóhelyek is, ahol a játékosok megbeszélhetik stratégiáikat, információkat cserélhetnek, vagy akár barátságokat köthetnek.</li>
+</ul>
+
+<!-- Eladási és Cserelehetőségek -->
+<h3>Eladási és Cserelehetőségek</h3>
+<ul>
+  <li>A játékosok képesek lesznek eladni vagy cserélni a játék során megszerzett vagy elkészített tárgyakat, felszereléseket és különböző nyersanyagokat.</li>
+  <li>Az eladási rendszerben figyelembe vesszük a piaci keresletet és kínálatot, ami dinamikus árakhoz vezet. Ez egy reális piaci környezetet teremt, ahol a játékosok stratégiai döntéseket hozhatnak az eladások és vásárlások során.</li>
+</ul>
+
+<h2>Különleges Tárgyak és Ritkaságok</h2>
+<p>A piacokon különleges tárgyakat és ritkaságokat is megtalálhatnak a játékosok, amelyek különleges képességeket vagy előnyöket biztosíthatnak a játék során. Ezek a tárgyak korlátozott számban érhetők el, ezáltal növelve értéküket és keresletüket a játékosok között.</p>
+
+<!-- Aukciós Rendszer -->
+<h2>Aukciós Rendszer</h2>
+<p>Az aukciós rendszer lehetővé teszi a játékosoknak, hogy ritka vagy nagy értékű tárgyaikat meghirdessék, ahol más játékosok licitálhatnak rájuk. Az aukciók izgalmas és versengő elemet visznek a játékba, ahol a játékosok versenyezhetnek a legjobb tárgyakért.</p>
+
+<!-- Biztonságos Kereskedelmi Rendszer -->
+<h2>Biztonságos Kereskedelmi Rendszer</h2>
+<p>A kereskedelmi rendszer biztonságos és felhasználóbarát, biztosítva, hogy a tranzakciók zökkenőmentesen és tisztességesen zajlanak. A rendszer szabályozza és ellenőrzi a tranzakciókat, megakadályozva a csalásokat és a tisztességtelen kereskedelmet.</p>
+
+<!-- Kereskedelmi Missziók és Küldetések -->
+<h2>Kereskedelmi Missziók és Küldetések</h2>
+<p>A játék tartalmaz kereskedelmi missziókat és küldetéseket, amelyek a piaci rendszerhez kapcsolódnak. Ezek a küldetések új lehetőségeket nyitnak meg a játékosok számára, hogy kereskedelmi ügyességüket kamatoztassák.</p>
+
+<p>Ez a kiterjedt kereskedelmi rendszer nemcsak a játék gazdaságát gazdagítja, hanem az interakciókat és a közösségi élményt is fokozza a "The UNI Saga" játékban. A játékosok így nemcsak harcosként, hanem ügyes kereskedőként is megmutathatják képességeiket, és a játékban szerzett eredményeiket valódi értékké alakíthatják.</p>
+
+<h1>Karakter testreszabás</h1>
+
+<p>A karakter testreszabás egy kiemelt funkció, amely lehetővé teszi a játékosoknak, hogy egyedi és személyre szabott karaktereket hozzanak létre. Ez a funkció nagymértékben növeli a játékélményt, lehetővé téve a játékosok számára, hogy kifejezzék saját stílusukat és kreativitásukat. A testreszabás részletei a következők:</p>
+
+<h2>Megjelenési Beállítások</h2>
+<ul>
+  <li>A játékosok testreszabhatják karaktereik arcát, haját, bőr színét, és egyéb fizikai jellemzőket. Ez magában foglalja a haj stílusát, szem és haj színét, arc formáját és sok más lehetőséget.</li>
+  <li>A részletes testreszabási lehetőségek révén a játékosok tényleg egyedülálló karaktert hozhatnak létre, amely tükrözi az ő egyéni stílusukat.</li>
+</ul>
+
+<h2>Ruházat és Felszerelés</h2>
+<ul>
+  <li>A játékosok választhatnak a számos elérhető ruhadarab és felszerelés közül, hogy karakterük megjelenését és képességeit testreszabhassák.</li>
+  <li>Különböző páncélok, ruhák és kiegészítők állnak rendelkezésre, amelyek nemcsak esztétikai, hanem játékbeli előnyöket is biztosíthatnak.</li>
+</ul>
+
+<h2>Speciális Kinézetű Tárgyak</h2>
+<ul>
+  <li>A játékban speciális kinézetű tárgyakat is megszerezhetnek a játékosok, amelyek különleges és ritka megjelenést biztosítanak.</li>
+  <li>Ezek a tárgyak megszerzése a játék során történő küldetések teljesítésével, különleges eseményeken való részvétellel, vagy magas szintű craftinggal lehetséges.</li>
+</ul>
+
+<h2>Karakter Fejlődés és Testreszabás</h2>
+<ul>
+  <li>A karakter fejlődése során a játékosok új testreszabási lehetőségeket és tárgyakat nyithatnak fel, így a karakterük fejlődésével párhuzamosan változik a megjelenésük is.</li>
+  <li>A karakter testreszabás így szerves részét képezi a játékélménynek, és motivációt ad a játékosoknak a további fejlődésre.</li>
+</ul>
+
+<p>Ez a részletes és sokoldalú karakter testreszabási rendszer lehetővé teszi a játékosok számára, hogy valóban sajátjukként érezzék a karakterüket a "The UNI Saga" virtuális világában. A testreszabás mélysége és sokszínűsége hozzájárul a játék egyediségéhez, és a játékosok közötti interakciókban is fontos szerepet játszik, hiszen lehetőséget ad a kifejezésre és az egyediség megmutatására.</p>
+
+<h2>Karakterkészítési Folyamat</h2>
+<p>A "The UNI Saga" játékban a karakterkészítés egy izgalmas és részletes folyamat, amely lehetővé teszi a játékosoknak, hogy egyedi és személyre szabott karaktereket hozzanak létre. Ez a folyamat a játék kezdeténél történik, és számos lépést foglal magában a karakter megjelenésének és képességeinek meghatározásától kezdve egészen a kezdeti felszerelések és képzettségek kiválasztásáig.</p>
+
+<h1>Karakter Alkotási Lépések</h1>
+
+<h2>1. Karakter Alapjellemzőinek Meghatározása:</h2>
+<p>Nem és Faj Kiválasztása: Először is a játékosok kiválasztják karakterük nemét és faját. Ezen döntések hatással lesznek a karakter megjelenésére és bizonyos képességeire.</p>
+<p>Alapjellemzők Beállítása: Ez magában foglalja az alapvető fizikai jellemzőket, mint például a magasság, testalkat, arcvonások és bőrszín.</p>
+
+<h2>2. Megjelenés Testreszabása:</h2>
+<p>Haj és Szem Szín: A játékosok kiválaszthatják karakterük hajának és szemének színét a széles palettáról.</p>
+<p>Hajstílus és Arcvonások: Különböző hajstílusok és arcformák közül lehet választani, hogy a karakter még egyedibb legyen.</p>
+
+<h2>3. Felszerelés és Képzettség Kiválasztása</h2>
+<p>Kezdeti Felszerelés: A játékosok kiválaszthatják karakterük kezdeti felszerelését, amely meghatározza a kezdő képességeiket és stílusukat.</p>
+<p>Képzettségek és Képességek: Különböző képzettségek és képességek közül választhatnak, amelyek meghatározzák a karakterük harci és mágikus képességeit.</p>
+
+<h2>4. Kaszt és Szakma Kiválasztása</h2>
+<p>Kaszt: A játékosok kiválaszthatják a karakterük kasztját, amely meghatározza a harci és mágikus stílusukat a játék során.</p>
+<p>Szakma: Szakmák, mint például kovács, bájitalmester vagy varázsló segítenek a karaktereknek különleges képességek és tárgyak előállításában.</p>
+
+<h2>5. Arcszkennelési Funkció</h2>
+<p>A játék új és innovatív funkciót vezet be a karakterkészítési folyamatba: az arcszkennelést. Ez a funkció lehetővé teszi a játékosok számára, hogy saját arcukat használják alapként karakterük megalkotásához, amit egy kép vagy élő kamerakép bescannelésével érhetnek el.</p>
+
+<h3>5.1. Arcszkennelési Folyamat</h3>
+<p>Kép Választása vagy Élő Kamera: A játékosok dönthetnek úgy, hogy egy meglévő fotót használnak, vagy élőben scannelik be az arcukat a kamera segítségével.</p>
+<p>Arcfelismerő Technológia: A játék arcfelismerő technológiát használ az arc jellemzőinek azonosítására és digitális reprezentációjának létrehozására.</p>
+<p>Automatikus Karakter Alkotás: Az arcfelismerő algoritmus azonosítja az arc jellemzőit, mint például az arcforma, szemszín, és hajstílus, és ezeket automatikusan alkalmazza a karakterre.</p>
+
+<h3>5.2. Testreszabási Lehetőségek</h3>
+<p>Finomítás és Módosítás: A játékosoknak lehetőségük van tovább finomítani és módosítani a karakterük arcjellemzőit az arcbeli szkennelés után.</p>
+<p>Kiegészítő Jellemzők: Ezen kívül további jellemzőket is hozzáadhatnak, mint például a smink, tetoválások, vagy egyéb kiegészítők, hogy még inkább egyedivé tegyék karakterüket.</p>
+
+<h3>5.3. Élethűség és Személyre Szabottság</h3>
+<p>Élethű Karakterek: Az arcszkennelési funkció lehetővé teszi, hogy a játékosok valóban egyedi és élethű karaktert hozzanak létre, ami hasonlít saját megjelenésükre.</p>
+<p>Egyedi Játékélmény: Ez a funkció fokozza a játékélményt, mivel a játékosok valóban saját magukat láthatják viszont a játék világában, így növelve az azonosulás és elmerülés érzését.</p>
+
+<h3>5.4. Adatvédelem és Biztonság</h3>
+<p>Adatvédelem: A játék gondosan kezeli a játékosok által megosztott személyes adatokat, és biztosítja, hogy az arcfelismerő technológia használata során a magánélet védelme prioritást élvez.</p>
+<p>Biztonsági Intézkedések: A játék számos biztonsági intézkedést alkalmaz, hogy megakadályozza az arcképek illetéktelen felhasználását vagy hozzáférését.</p>
+
+<h2>6. Végső Ellenőrzés és Mentés</h2>
+<p>Miután a játékosok elkészítették a karakterüket, átnézhetik és módosíthatják az összes kiválasztott jellemzőt. Miután minden tökéletesen megfelel az elvárásaiknak, a karaktert elmenthetik és kezdődhet a játék.</p>
+
+<center><img style="width: 70%""; src="character_design.png" alt="Karakter designer"></center>
+
+<h1>PvP Rendszer</h1>
+    <p>Duellum Aréna: Egy külön terület vagy aréna létrehozása, ahol a játékosok barátságos vagy versenyképes duellumokat vívhatnak egymással.</p>
+    <p>Ranglistás Rendszer: A PvP arénában a játékosok ranglistán szerepelhetnek az elért eredményeik alapján. Ez motiválhatja őket a versenyben való részvételre és a fejlődésre.</p>
+    <p>Csoportos Csata Módok: Csoportos PvP módok bevezetése, ahol a játékosok csapatokat alkotva küzdhetnek meg egymással. Például lehetnek csapat alapú küldetések vagy arénaharcok.</p>
+    <p>PvP Jutalmak: Különleges jutalmak és kitüntetések a PvP sikerekért, mint például ritka felszerelések, különleges címek, vagy díszítő elemek.</p>
+    <p>PvP Események: Időszakos PvP események és versenyek rendezése, amelyek különleges kihívásokat és jutalmakat kínálnak.</p>
+
+    <h1>Achievement (Teljesítmény) Rendszer</h1>
+    <p>Teljesítmények Típusai: Különböző típusú achievementek bevezetése, amelyek a játék különböző aspektusaira összpontosítanak, mint például a küldetések teljesítése, felfedezés, harci eredmények, vagy közösségi tevékenységek.</p>
+    <p>Jutalmak és Elismertség: Az achievementek teljesítéséért a játékosok különleges jutalmakat kapnak, mint például egyedi tárgyakat, díszítő elemeket vagy speciális címeket.</p>
+    <p>Teljesítmények Nyomonkövetése: Egy rendszer, ami lehetővé teszi a játékosok számára, hogy nyomon kövessék a teljesítményeiket és lássák, milyen achievementek állnak még előttük.</p>
+    <p>Személyes Teljesítménytáblák: Egy felület, ahol a játékosok megtekinthetik saját és más játékosok teljesítményeit, ösztönözve ezzel a versengést és a közösségi interakciót.</p>
+    <p>Kihívások és Küldetések: Speciális kihívások és küldetések bevezetése, amelyek az achievementek teljesítésére összpontosítanak, tovább fokozva a játék izgalmát és változatosságát.</p>
+
+
+    <h1>Játékbeli Pénznem és Kozmetikai Rendszer</h1>
+
+    <h2>Pénznem: "Akadémikus Arany"</h2>
+    <p><strong>Leírás:</strong> "Akadémikus Arany": Egy virtuális pénznem, amelyet a játékban használnak.</p>
+    <p><strong>Felhasználás:</strong> A játékosok ezt a pénznemet használják kozmetikai tárgyak, skinek és egyéb játékbeli előnyök vásárlására.</p>
+    <p><strong>Váltószám:</strong> Az "Akadémikus Arany" igazi pénzért vásárolható. Például 1 euró/dollár 100 "Akadémikus Arany" értékű lehet.</p>
+
+    <h2>Vásárlási Rendszer</h2>
+    <p><strong>Webshop/Piactér:</strong> A játékosok online piactéren vásárolhatnak "Akadémikus Aranyat" és kozmetikai tárgyakat.</p>
+    <p><strong>Tranzakciós Rendszer:</strong> Biztonságos és felhasználóbarát tranzakciós rendszer, amely támogatja a különböző fizetési módokat.</p>
+
+    <h2>Kozmetikai Tárgyak és Skinek</h2>
+    <p><strong>Típusok:</strong></p>
+    <ul>
+        <li>Ruházat: Egyedi ruhadarabok és szettek.</li>
+        <li>Fegyverskinek: Különböző stílusú és kinézetű fegyverskinek.</li>
+        <li>Pálcák: Varázspálcák különféle dizájnokkal.</li>
+        <li>Háziállatok: Kísérő háziállatok, amelyek a játékosokkal tartanak.</li>
+        <li>Animációk/Effektek: Egyedi karakteranimációk és effektek.</li>
+    </ul>
+
+    <h3>Exkluzív Tárgyak:</h3>
+    <ul>
+        <li>Szezonális Skinek: Ünnepekhez és eseményekhez kapcsolódó limitált kiadású skinek.</li>
+        <li>Ritkaságok: Különleges, ritka tárgyak, amelyek egyedi tulajdonságokkal rendelkeznek.</li>
+    </ul>
+
+    <h2>Gazdasági Modellezés</h2>
+    <p><strong>Microtranzakciók:</strong> Kis értékű vásárlási lehetőségek azok számára, akik kisebb összegeket szeretnének elkölteni.</p>
+    <p><strong>Célcsoport:</strong> A játékosok vásárlási preferenciáinak figyelembevétele a legvonzóbb ajánlatok létrehozásához.</p>
+    <p><strong>Egyensúly:</strong> Biztosítja, hogy a játék ésszerű maradjon azok számára is, akik nem költenek valódi pénzt.</p>
+
+    <h1>Mikrofonos Interakció</h1>
+
+    <h2>Hangalapú Interakciók</h2>
+    <p>A játékban az NPC-kkel való interakciót a játékosok hangalapú parancsokkal és kommunikációval végezhetik. A játékosok beszélhetnek az NPC-kkel a mikrofonon keresztül, ami lehetővé teszi számukra, hogy természetesebben és valósághűbben kommunikáljanak a játék világával.</p>
+    <p><strong>Fejlett Beszédfelismerés:</strong> A játék fejlett beszédfelismerő technológiát használ, amely képes érzékelni és értelmezni a játékosok beszédét, és ennek megfelelően reagálni az NPC-k által.</p>
+
+    <h2>Interaktív Történetmesélés</h2>
+    <p><strong>Döntésalapú Párbeszédek:</strong> Az NPC-kkel folytatott párbeszédek hatással lehetnek a játék történetére és a játékosokra váró kihívásokra. A játékosok választásai és reakciói befolyásolhatják az NPC-k hozzáállását, és nyitva hagyhatnak új küldetéseket vagy rejtett történeti szálakat.</p>
+    <p><strong>Karakterspecifikus Reakciók:</strong> Az NPC-k különböző karakterekkel és személyiségekkel rendelkeznek, és eltérő módon reagálnak a játékosok különböző hangnemeire és választásaikra.</p>
+
+    <h2>Játékbeli Implementáció</h2>
+    <p><strong>Hangfelismerés Beállítása:</strong> A játékban a játékosok konfigurálhatják a hangfelismerési beállításokat, hogy a rendszer a lehető legpontosabban érzékelje és értelmezze a beszédüket.</p>
+    <p><strong>Interakciók Felvétele és Visszajátszása:</strong> A fontos párbeszédek felvétele és visszajátszása, így a játékosok visszanézhetik az NPC-kkel folytatott interakcióikat, és jobban megérthetik a történetük különböző aspektusait.</p>
+
+    <h2>Biztonsági és Adatvédelmi Intézkedések</h2>
+    <p><strong>Adatvédelem:</strong> A játék biztosítja, hogy a hangalapú kommunikáció során keletkező adatok biztonságban legyenek, és csak a játékmenet javítására használják fel.</p>
+    <p><strong>Felhasználói Beállítások:</strong> A játékosok testre szabhatják a hangalapú interakciókat, beleértve a hangfelismerés érzékenységének és a mikrofon használatának beállításait.</p>
+
+    <p>Ez az újítás tovább gazdagítja a szoftver interaktivitását és mélységét, valamint egy új szintre emeli a játékosok elmerülését és részvételét a játék virtuális világában.</p>
+    
+
+    <h1>Mesterséges Intelligencia a Chat Moderációban</h1>
+
+    <h2>Funkciók és Előnyök:</h2>
+    <ul>
+        <li><strong>Valós Időben Történő Elemzés és Cenzúra:</strong> Az MI rendszer valós időben elemzi a játékosok által küldött üzeneteket és automatikusan cenzúrázza a káromkodást, illetlen kifejezéseket és egyéb nem megfelelő tartalmakat.</li>
+        <li><strong>Folyamatos Tanulás és Fejlődés:</strong> Az MI algoritmusok folyamatosan tanulnak és fejlődnek, hogy hatékonyabban ismerjék fel a változó és új formájú illetlen tartalmakat.</li>
+        <li><strong>Személyre Szabható Szűrési Beállítások:</strong> A játékosok testre szabhatják saját chat-szűrési beállításaikat, hogy dönthessenek arról, milyen szintű moderálást szeretnének alkalmazni.</li>
+        <li><strong>Felhasználói Jelentések és Moderáció:</strong> A játékosok jelenthetik a rendszer által esetlegesen nem észlelt illetlen tartalmakat, amelyeket a moderátorok áttekintenek és szükség esetén intézkednek.</li>
+    </ul>
+
+    <h2>Biztonság és Játékosbarát Környezet:</h2>
+    <p>A rendszer hozzájárul egy biztonságosabb és kellemesebb játékélményhez minden játékos számára. Különösen fontos ez a fiatalabb korosztály számára, hogy a játék környezete mentes legyen az agresszív vagy sértő tartalmaktól.</p>
+    
+
+
+    <h1>Admin Interface a Hostoló Karakternek</h1>
+
+    <h2>Fő Funkciók és Képességek:</h2>
+    <ul>
+        <li><strong>Felhasználói Interakciók Kezelése:</strong>
+            <ul>
+                <li>Figyelmeztetések küldése játékosoknak.</li>
+                <li>Ideiglenes vagy végleges kitiltás lehetősége.</li>
+            </ul>
+        </li>
+        <li><strong>Világ Állapotának Kezelése:</strong>
+            <ul>
+                <li>Rollback lehetőség a játék világának visszaállításához.</li>
+            </ul>
+        </li>
+        <li><strong>Felügyeleti és Jelentési Eszközök:</strong>
+            <ul>
+                <li>Részletes játékosnaplók elérése.</li>
+                <li>Jelentések és statisztikák készítése.</li>
+            </ul>
+        </li>
+        <li><strong>Felhasználói Visszajelzés Kezelése:</strong>
+            <ul>
+                <li>A játékosoktól érkező visszajelzések fogadása és kezelése.</li>
+                <li>Konstruktív visszajelzések alapján a játék fejlesztése és optimalizálása.</li>
+            </ul>
+        </li>
+        <li><strong>Biztonsági és Adatvédelmi Protokollok:</strong>
+            <ul>
+                <li>A játékosok személyes adatainak és információinak védelme.</li>
+                <li>Biztonsági protokollok és irányelvek betartása.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>Az Admin Interface a Hostoló Karakternek egy olyan eszköz, amely nem csak a játékmenetet teszi zökkenőmentesebbé, hanem hozzájárul a játékosok általános elégedettségéhez és biztonságérzetéhez. Ezáltal a játékvezetők képesek lesznek gyorsan és hatékonyan reagálni a játékon belüli eseményekre.</p>
+
+    <h1>BattlEye Anticheat Integráció</h1>
+
+    <h2>A BattlEye Rendszer Jellemzői és Funkciói:</h2>
+    <ul>
+        <li><strong>Kernel-Alapú Ellenőrzés:</strong>
+            <ul>
+                <li>A játékfájlokat és rendszerfolyamatokat ellenőrzi a tisztességes játékmenet érdekében.</li>
+            </ul>
+        </li>
+        <li><strong>Automatikus Frissítések és Játékfájlok Átvizsgálása:</strong>
+            <ul>
+                <li>Rendszeres frissítések a legújabb csalási módszerek ellen.</li>
+                <li>Játékfájlok automatikus ellenőrzése a csalások azonosítására.</li>
+            </ul>
+        </li>
+        <li><strong>Azonnali Intézkedések és Játékosok Kitiltása:</strong>
+            <ul>
+                <li>Intézkedések azonnal a csalás észlelésekor.</li>
+                <li>Ideiglenes vagy végleges kitiltások lehetősége a csaló játékosokkal szemben.</li>
+            </ul>
+        </li>
+        <li><strong>Teljes Mértékben Testreszabható:</strong>
+            <ul>
+                <li>Testreszabható rendszer a játék specifikus igényekhez.</li>
+                <li>Beállítható a csalások specifikus típusaira való összpontosítás.</li>
+            </ul>
+        </li>
+        <li><strong>Játékintegritás és Játékosok Biztonsága:</strong>
+            <ul>
+                <li>Védi a játékintegritást és biztosítja, hogy minden játékos azonos feltételekkel versenyezzen.</li>
+                <li>Biztosítja a játékosok adatainak biztonságát a hatékony csalás elleni küzdelem mellett.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>A BattlEye anticheat rendszer integrációja biztosítja a tisztességes játékmenetet és a játékintegritást a "The UNI Saga" játékban. A csalások elleni hatékony küzdelemmel garantálja a játékosok egyenlő esélyeit és a biztonságos játékélményt.</p>
+
+<h3>Szekvenciális diagramm vásárláshoz:</h3>
+<p><center><img src="vasarlas.png" alt="Szekvenciális Diagramm"></center></p>
+<h3>Szekvenciális diagramm a küldetésekhez:</h3>
+<p><center><img src="kuldetes.png" alt="Szekvenciális Diagramm"></center></p>
 
 <h1 class="western"><a name="4. Haszn&aacute;lhat&oacute;s&aacute;g|outline"></a>4.
 Haszn&aacute;lhat&oacute;s&aacute;g</h1>
@@ -405,18 +1264,10 @@ A szoftverről írt dokumentációk elérhetőek online, vagy a README dokumentu
 A játék készítésekor, fejlesztésekor törekedtünk arra, hogy minél egyszerűbb legyen a kezelése. A menü esetében nem alkalmaztunk félre érthető, bonyolult menüpontokat, túlzott díszítéseket. Olyan kezelőfelületre törekedtünk, amit már a felhasználók láthattak korábban, ismerhetnek más játékokból, nem utolsó sorban egyszerű és átlátható felületet szerettünk volna kialakítani számukra.
 <h3>Futtatás:</h3>
 Természetesen függ a rendszer erőforrásaitól, hogy a felhasználó milyen eszközzel rendelkezik, s annak milyenek a kapacitásai. A játékon belüli beállításoktól függ az általa igénybe vett erőforrások mérete is. Egyértelműen befolyásolhatja az egyidejűleg futó programokat, gyengébb rendszereken a játék. Erősebb gépeken, eszközökön nem akadályozza a játék, hogy mellette internetezzünk, vagy más programokat futtassunk a bezárása nélkül. Összességében a játék felhasználói élménye minden eszközön garantált, de figyelembe kell venni a fent írt erőforrások függvényét.  
-
 </ul>
 
 
-
-
-
-<p><br>
-<br>
-
-</p>
-
+    <br><br>
 <h1 class="western"><a name="5. Megb&iacute;zhat&oacute;s&aacute;g|outline"></a>5.
 Megb&iacute;zhat&oacute;s&aacute;g</h1>
 
@@ -506,8 +1357,21 @@ Tervez&eacute;si korl&aacute;toz&aacute;sok</h1>
 	<li>Célunk, hogy minél alacsonyabb rendszerkövetelményt igényeljen a játék konzolon és PC-n is. Ezáltal tudjuk biztosítani, hogy minél több hardveren tudjon futni. Nem utolsó sorban így több felhasználót el tudunk érni, mert az is hozzá tud férni, aki kisebb teljesítményű géppel, eszközzel rendelkezik.</li>
 	<li>Milyen újra felhasználható elemek építhetők be az alkalmazásba (komponens- és/vagy osztálykönyvtárak, kész kódok stb.). </li>
 	<li>Milyen fejlesztési módszertant, hogyan kell használni.</li>
-	<li>A játék fejlesztési módszere a Scrum. A Scrum egy könnyen érthető és alkalmazható módszer, amely lehetővé teszi a folyamatos visszajelzést és a hatékony fejlesztést.
+	<li>A játék fejlesztési módszere a Scrum. A Scrum egy könnyen érthető és alkalmazható módszer, amely lehetővé teszi a folyamatos visszajelzést és a hatékony fejlesztést.</li>
 		A Scrum projektet kis időablakokra osztja, amelyeket "sprinteknek" neveznek, általában 2-4 hét hosszúságúak. Minden sprint kezdetén a fejlesztőcsapat kiválasztja a sprint deliverables-t, amit a sprint végéig elkészítenek. A terméktulajdonos összeállítja a termék backlog-ot, amely tartalmazza a jövőbeni fejlesztésre tervezett funkciókat és javításokat. A backlog elemeket prioritással rendelkező listaként kezelik. Minden sprint kezdetén a fejlesztőcsapat kiválasztja a sprint backlog elemeket a termék backlog-ból, és meghatározza, hogy mely feladatokat hajtják végre a sprint során. A sprint végén tartott meeting, ahol a fejlesztőcsapat bemutatja a sprint deliverables-t a terméktulajdonosnak és más érdekelteknek. A visszajelzések és az elfogadás itt történik.</li>
+	<li>Socket.io:</li>
+	<li>Eseményalapú Kommunikáció: A Socket.io lehetővé teszi az eseményvezérelt kommunikációt, ami azt jelenti, hogy az üzeneteket eseményekhez köthetjük, például egy játékos belépéséhez vagy üzenetküldéséhez.</li>
+	<li>Automatikus Újracsatlakozás: Ha megszakad a kapcsolat, a Socket.io gondoskodik az automatikus újracsatlakozásról, így a játékosok kommunikációja folyamatos maradhat.</li>
+	<li>Kompatibilitás: Visszafelé kompatibilis a régebbi böngészőkkel is, amelyek nem támogatják a WebSocket-et, így szélesebb körű felhasználói bázist szolgál ki.</li>
+	<li>WebSocket:</li>
+	<li>Alacsony Késleltetés: A WebSocket egy TCP-alapú protokoll, amely lehetővé teszi az adatok gyors és hatékony továbbítását, minimalizálva a késleltetést.
+	<li>Valós idejű Kommunikáció: A WebSocket kétirányú kommunikációt tesz lehetővé a kliens és a szerver között valós időben, amely kulcsfontosságú a dinamikus és interaktív chat funkciókhoz.
+	<li>Hatékonyság: A WebSocket kevesebb fejlécadatot igényel a HTTP-hez képest, ami csökkenti az adatforgalmat és növeli a hálózati hatékonyságot.
+	<li>Együttes Használatuk Előnyei a "The UNI Saga" Játékban
+	<li>Sebesség és Megbízhatóság: A Socket.io és WebSocket együttes használata optimalizálja a sebességet és megbízhatóságot, biztosítva a zökkenőmentes és gyors kommunikációt.</li>
+	<li>Skálázhatóság: A játék növekvő játékosbázisát könnyebben kezelheti ez a kombináció, mivel a WebSocket támogatja a nagy mennyiségű kapcsolatot, míg a Socket.io biztosítja a stabilitást és kompatibilitást.</li>
+	<li>Felhasználói Élmény: A valós idejű, kétirányú kommunikáció javítja a játékosok közötti interakciót, ami növeli a felhasználói élményt és elősegíti a közösségi kapcsolatok építését a játékon belül.</li>
+		</li>
 	
 </ul>
 
@@ -608,8 +1472,25 @@ Az ilyen grafikus elemek, például felugró üzenetek vagy szövegdobozok, seg�
 	Fontos megjegyezni, hogy a játékhoz nincs külön indítóalkalmazás (launcher), így külön regisztrációra nincs szükség. A játékhoz való szerverkapcsolat TCP/IP protokollon keresztül történik.<br><br>
 	</p>
 
+<p>
+	A játékban a WebRTC (Web Real-Time Communication) technológiát választottuk a hangalapú kommunikáció integrálásához. Ennek több oka van:
+<ol>
+ 	<li>Közvetlen Kommunikáció: A WebRTC lehetővé teszi a játékosok számára, hogy közvetlenül, valós időben kommunikáljanak egymással. Ez a peer-to-peer kapcsolat biztosítja a gyors és zökkenőmentes hangátvitelt, ami létfontosságú a játékélmény szempontjából.</li>
+	<li>Nincs Szükség Külső Bővítményekre: Mivel a WebRTC közvetlenül a modern böngészőkben működik, nincs szükség külön alkalmazásokra vagy bővítményekre a kommunikációhoz. Ez egyszerűsíti a felhasználói élményt és megkönnyíti a játékhoz való hozzáférést.</li>
+	<li>Magas Szintű Biztonság: A WebRTC biztonságos, titkosított kommunikációt kínál, ami garantálja, hogy a játékosok beszélgetései privátak és védettek maradnak.</li>
+	<li>Több Platform Támogatása: A WebRTC kompatibilis a legtöbb modern böngészővel és mobil operációs rendszerrel, így a játékunkat többféle eszközön is élvezhetik a felhasználók.</li>
+	<li>Könnyű Integráció és Skálázhatóság: A WebRTC technológiája könnyen integrálható a játékunkba, és rugalmasan skálázható a jövőbeni fejlesztésekhez.</li>
+</ol>
+<p>Hogyan Használjuk a WebRTC-t?</p>
+A "The Uni Saga" játékban a WebRTC-t elsősorban a következőkére használjuk:<br>
+<ul>
+<li>Hangalapú Csevegés a Játékosok Között: A játékosok valós időben beszélhetnek egymással a játék során, ami mélyebb szintű interakciót és együttműködést tesz lehetővé.</li>
+<li>Csapatépítés és Stratégiai Tervezés: A WebRTC segítségével a játékosok gyorsan és hatékonyan kommunikálhatnak, miközben csapatot építenek vagy közös stratégiákat dolgoznak ki.</li>
+<li>>Közösségi Interakció és Barátságépítés: A hangalapú csevegés segít a játékosoknak abban, hogy közösséget alakítsanak ki és barátságokat kössenek a játékon belül.</li>
+</ul>
+</p>
 <p><br>
-<br>
+
 
 </p>
 
